@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+message Maintenance {
+  message Temperature {
+    message Unit {
+      bool celsius = 1;
+      bool farenheit = 2;
+    }
+
+    int32 value = 1;
+    Unit Units = 2;
+  }
+
+  message Diagnostics {
+    message Inverters {
+      message Unit {
+        message OptimizersStatus {
+          int32 total = 1;
+          int32 online = 2;
+        }
+
+        message Optimizer {
+          message Date {
+            int32 year = 1;
+            int32 month = 2;
+            int32 day = 3;
+            int32 hour = 4;
+            int32 minute = 5;
+            int32 second = 6;
+          }
+
+          string serialNumber = 1;
+          bool online = 2;
+          Date lastReport = 3;
+          float energy = 4;
+          int32 outputV = 5;
+          int32 inputV = 6;
+          int32 inputC = 7;
+          Maintenance.Temperature temperature = 8;
+        }
+
+        string invSn = 1;
+        repeated Optimizer optimizerList = 2;
+        OptimizersStatus optimizersStatus = 4;
+      }
+
+      Unit left = 1;
+      Unit primary = 2;
+      Unit right = 3;
+    }
+
+    Inverters inverters = 1;
+  }
+
+  Diagnostics diagnostics = 6;
+}
