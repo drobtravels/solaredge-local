@@ -60,9 +60,15 @@ You can check by finding the IP address of your inverter and visiting it in a br
 * Status: "web/v1/status"
 * Status_ServerCommTest: "web/v1/status/server_comm_test"
 
-### Using the API
+The Status endpoint appears to the most useful for realtime production data.
+Optimizer level data is available from the maintenance API endpoint.
+
+
+## Using the API
 
 All endpoints I have explored so far appear to be a GET, and responses use [Protocol Buffers](https://developers.google.com/protocol-buffers/).  There is no authentication
+
+### View Raw Response
 
 You can see the raw data by doing the following (assuming you have the protoocal buffers CLI tool installed)
 
@@ -74,3 +80,14 @@ protoc --decode_raw < response.bin
 Many numbers appear to be 32 bit floating point.
 
 The proto definitions required to fully parse the responses are available in  javascript if you choose "view source" in the developer tools of your browser.
+
+### View Parsed response
+
+If there is a corresponding `.proto` file in [message_types](/message_types), you can view the parsed response from the API.  Each proto file correspond to the name of an API endpoint. These are very much a WIP and may be incomplete.  These can be created by choosing "view source" in the developer tools of your browser, and searching for text like `proto.web_status.<apiNameInCamelCase>.toObject`
+
+Here is an example for the status API:
+
+```
+curl http://<inverter ip>/web/v1/status --output response.bin
+protoc --decode Status message_types/status.proto < response.bin
+```
