@@ -84,8 +84,7 @@ All endpoints I have explored so far appear to be a GET, and responses use [Prot
 You can see the raw data by doing the following (assuming you have the protoocal buffers CLI tool installed)
 
 ```
-curl http://<inverter ip>/web/v1/status --output response.bin
-protoc --decode_raw < response.bin
+curl -s http://<inverter ip>/web/v1/status | protoc --decode_raw
 ```
 
 Many numbers appear to be 32 bit floating point.
@@ -99,6 +98,5 @@ If there is a corresponding `.proto` file in [message_types](/message_types), yo
 Here is an example for the status API:
 
 ```
-curl http://<inverter ip>/web/v1/status --output response.bin
-protoc --decode Status message_types/status.proto < response.bin
+curl -s http://<inverter ip>/web/v1/status | protoc --decode Status message_types/status.proto
 ```
