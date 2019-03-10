@@ -2,13 +2,13 @@ syntax = "proto3";
 
 message Maintenance {
   message Temperature {
-    message Unit {
+    message Units {
       bool celsius = 1;
       bool farenheit = 2;
     }
 
     int32 value = 1;
-    Unit Units = 2;
+    Units units = 2;
   }
 
   message Diagnostics {
