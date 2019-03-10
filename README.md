@@ -10,55 +10,55 @@ You can check by finding the IP address of your inverter and visiting it in a br
 
 ### API Endpoints
 
-AppConfigs: "web/v1/app_configs",
-Region: "web/v1/region",
-Region_Country: "web/v1/region/country",
-Region_Language: "web/v1/region/language",
-Pairing: "web/v1/pairing",
-Pairing_Request: "web/v1/pairing/request",
-Communication: "web/v1/communication",
-Communication_Server: "web/v1/communication/server",
-Communication_Lan: "web/v1/communication/lan",
-Communication_Rs485_SlaveDetect: "web/v1/communication/rs485/<id>/slave_detect",
-Communication_Rs485_Protocol: "web/v1/communication/rs485/<id>/protocol",
-Communication_Rs485_DeviceId: "web/v1/communication/rs485/<id>/deviceid",
-Communication_Rs485_Modbus: "web/v1/communication/rs485/<id>/modbus",
-Communication_Rs485_Modbus_AddDevice: "web/v1/communication/rs485/<id>/modbus/add_device",
-Communication_Rs485_Modbus_RemoveDevice: "web/v1/communication/rs485/<id>/modbus/remove_device",
-Communication_Wifi: "web/v1/communication/wifi",
-Communication_Wifi_Wps: "web/v1/communication/wifi/wps",
-Communication_Wifi_Connect: "web/v1/communication/wifi/connect",
-Communication_Cellular: "web/v1/communication/cellular",
-Communication_Zigbee_Defaults: "web/v1/communication/zigbee/defaults",
-Communication_Zigbee_ModuleConfigs: "web/v1/communication/zigbee/module_configs",
-Communication_Zigbee_OpMode: "web/v1/communication/zigbee/op_mode",
-Communication_Gpio_Pri: "web/v1/communication/gpio/pri",
-Communication_ModbusTcp: "web/v1/communication/modbus_tcp",
-PowerControl: "web/v1/power_control",
-PowerControl_GridControl: "web/v1/power_control/grid_control",
-PowerControl_EnergyManager_LimitControl: "web/v1/power_control/energy_manager/limit_control",
-PowerControl_EnergyManager_EnergyControl: "web/v1/power_control/energy_manager/energy_control",
-PowerControl_EnergyManager_StorageControl: "web/v1/power_control/energy_manager/storage_control",
-PowerControl_ReactivePower: "web/v1/power_control/reactive_power",
-PowerControl_ActivePower: "web/v1/power_control/active_power",
-PowerControl_Wakeup: "web/v1/power_control/wakeup",
-PowerControl_Advanced: "web/v1/power_control/advanced",
-PowerControl_Reset: "web/v1/power_control/reset",
-PowerControl_Rrcr: "web/v1/power_control/rrcr",
-Maintenance: "web/v1/maintenance",
-Maintenance_DateTime: "web/v1/maintenance/date_and_time",
-Maintenance_ResetCounters: "web/v1/maintenance/reset_counters",
-Maintenance_ResetFactory: "web/v1/maintenance/reset_factory",
-Maintenance_Afci: "web/v1/maintenance/afci",
-Maintenance_AfciTest: "web/v1/maintenance/afci/test",
-Maintenance_Inverters_SelfTest: "web/v1/maintenance/inverters/<position>/self_test",
-Maintenance_Standby: "web/v1/maintenance/standby",
-Maintenance_GridProtectionLogin: "web/v1/maintenance/grid_protection/login",
-Maintenance_GridProtection: "web/v1/maintenance/grid_protection",
-Maintenance_UpgradeUsb: "web/v1/maintenance/fw_upgrade/usb",
-Information: "web/v1/information",
-Status: "web/v1/status",
-Status_ServerCommTest: "web/v1/status/server_comm_test"
+* AppConfigs: "web/v1/app_configs"
+* Region: "web/v1/region"
+* Region_Country: "web/v1/region/country"
+* Region_Language: "web/v1/region/language"
+* Pairing: "web/v1/pairing"
+* Pairing_Request: "web/v1/pairing/request"
+* Communication: "web/v1/communication"
+* Communication_Server: "web/v1/communication/server"
+* Communication_Lan: "web/v1/communication/lan"
+* Communication_Rs485_SlaveDetect: "web/v1/communication/rs485/<id>/slave_detect"
+* Communication_Rs485_Protocol: "web/v1/communication/rs485/<id>/protocol"
+* Communication_Rs485_DeviceId: "web/v1/communication/rs485/<id>/deviceid"
+* Communication_Rs485_Modbus: "web/v1/communication/rs485/<id>/modbus"
+* Communication_Rs485_Modbus_AddDevice: "web/v1/communication/rs485/<id>/modbus/add_device"
+* Communication_Rs485_Modbus_RemoveDevice: "web/v1/communication/rs485/<id>/modbus/remove_device"
+* Communication_Wifi: "web/v1/communication/wifi"
+* Communication_Wifi_Wps: "web/v1/communication/wifi/wps"
+* Communication_Wifi_Connect: "web/v1/communication/wifi/connect"
+* Communication_Cellular: "web/v1/communication/cellular"
+* Communication_Zigbee_Defaults: "web/v1/communication/zigbee/defaults"
+* Communication_Zigbee_ModuleConfigs: "web/v1/communication/zigbee/module_configs"
+* Communication_Zigbee_OpMode: "web/v1/communication/zigbee/op_mode"
+* Communication_Gpio_Pri: "web/v1/communication/gpio/pri"
+* Communication_ModbusTcp: "web/v1/communication/modbus_tcp"
+* PowerControl: "web/v1/power_control"
+* PowerControl_GridControl: "web/v1/power_control/grid_control"
+* PowerControl_EnergyManager_LimitControl: "web/v1/power_control/energy_manager/limit_control"
+* PowerControl_EnergyManager_EnergyControl: "web/v1/power_control/energy_manager/energy_control"
+* PowerControl_EnergyManager_StorageControl: "web/v1/power_control/energy_manager/storage_control"
+* PowerControl_ReactivePower: "web/v1/power_control/reactive_power"
+* PowerControl_ActivePower: "web/v1/power_control/active_power"
+* PowerControl_Wakeup: "web/v1/power_control/wakeup"
+* PowerControl_Advanced: "web/v1/power_control/advanced"
+* PowerControl_Reset: "web/v1/power_control/reset"
+* PowerControl_Rrcr: "web/v1/power_control/rrcr"
+* Maintenance: "web/v1/maintenance"
+* Maintenance_DateTime: "web/v1/maintenance/date_and_time"
+* Maintenance_ResetCounters: "web/v1/maintenance/reset_counters"
+* Maintenance_ResetFactory: "web/v1/maintenance/reset_factory"
+* Maintenance_Afci: "web/v1/maintenance/afci"
+* Maintenance_AfciTest: "web/v1/maintenance/afci/test"
+* Maintenance_Inverters_SelfTest: "web/v1/maintenance/inverters/<position>/self_test"
+* Maintenance_Standby: "web/v1/maintenance/standby"
+* Maintenance_GridProtectionLogin: "web/v1/maintenance/grid_protection/login"
+* Maintenance_GridProtection: "web/v1/maintenance/grid_protection"
+* Maintenance_UpgradeUsb: "web/v1/maintenance/fw_upgrade/usb"
+* Information: "web/v1/information"
+* Status: "web/v1/status"
+* Status_ServerCommTest: "web/v1/status/server_comm_test"
 
 ### Using the API
 
