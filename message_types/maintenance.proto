@@ -40,7 +40,7 @@ message Maintenance {
         }
 
         string invSn = 1;
-        repeated Optimizer optimizerList = 2;
+        repeated Optimizer optimizer = 2;
         OptimizersStatus optimizersStatus = 4;
       }
 
