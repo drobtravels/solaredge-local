@@ -1,1 +1,10 @@
 private
+
+# venv stuff
+pyvenv.cfg
+pip-selfcheck.json
+venv
+.venv
+Pipfile*
+share/*
+Scripts/
