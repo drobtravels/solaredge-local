@@ -8,3 +8,9 @@ venv
 Pipfile*
 share/*
 Scripts/
+
+build/
+dist/
+.egg-info
+
+.vs_code
