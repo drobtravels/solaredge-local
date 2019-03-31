@@ -21,6 +21,20 @@ You can check by finding the IP address of your inverter and visiting it in a br
 
 If you do not have the local API available, see [this repository](https://github.com/jbuehl/solaredge) as an alternative.
 
+### Using the Python wrapper
+
+For convinience, a python API wrapper, [solaredge_local](https://pypi.org/project/solaredge-local/) is available
+
+To install: `pip install solaredge-local`
+
+To use:
+
+```
+from solaredge_local import SolarEdge
+client = SolarEdge("http://<inverter ip address>")
+client.get_status()
+```
+
 ### API Endpoints
 
 * AppConfigs: "web/v1/app_configs"

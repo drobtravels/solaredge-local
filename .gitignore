@@ -11,6 +11,8 @@ Scripts/
 
 build/
 dist/
-.egg-info
+solaredge_local.egg-info/
 
-.vs_code
+.vscode/
+
+*.pyc

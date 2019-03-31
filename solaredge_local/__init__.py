@@ -1,2 +1,2 @@
-from .solaredge import SolarEdge
+from solaredge_local.solaredge import SolarEdge
 

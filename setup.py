@@ -22,7 +22,7 @@ long_description = read('README.md')
 
 setup(
     name='solaredge_local',
-    version="0.1.0",
+    version="0.1.1",
     url='https://github.com/drobtravels/solaredge-local',
     license='MIT License',
     author='David Roberts',
