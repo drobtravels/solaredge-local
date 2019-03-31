@@ -19,6 +19,8 @@ Reportedly, these new inverters have a CPU number starting with 04.
 
 You can check by finding the IP address of your inverter and visiting it in a browser.  If it supports the local API, you'll see the SolarEdge logo and a "Commissioning" menu.
 
+If you do not have the local API available, see [this repository](https://github.com/jbuehl/solaredge) as an alternative.
+
 ### API Endpoints
 
 * AppConfigs: "web/v1/app_configs"
