@@ -23,7 +23,7 @@ If you do not have the local API available, see [this repository](https://github
 
 ### Using the Python wrapper
 
-For convinience, a python API wrapper, [solaredge_local](https://pypi.org/project/solaredge-local/) is available
+For convinience, a python API wrapper, [solaredge_local](https://pypi.org/project/solaredge-local/) is available.  **Only python 3 is supported**
 
 To install: `pip install solaredge-local`
 

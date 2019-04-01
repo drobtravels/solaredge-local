@@ -33,6 +33,7 @@ setup(
     packages=['solaredge_local'],
     include_package_data=True,
     platforms='any',
+    python_requires='>=3.0',
     install_requires=[
         'uplink',
         'uplink-protobuf'
