@@ -29,6 +29,7 @@ setup(
     author_email="",
     description='API wrapper to communicate locally with SolarEdge Inverters',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     packages=['solaredge_local'],
     include_package_data=True,
     platforms='any',
