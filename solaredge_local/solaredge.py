@@ -8,5 +8,5 @@ class SolarEdge(Consumer):
         pass
 
     @get("/maintenance")
-    def get_optomizers(self):
+    def get_optimizers(self) -> Maintenance:
         pass
