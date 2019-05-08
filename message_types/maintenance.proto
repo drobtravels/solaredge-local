@@ -1,6 +1,22 @@
 syntax = "proto3";
 
 message Maintenance {
+  
+  message Time {
+	message Current {
+		int32 year = 1;
+		int32 month = 2;
+		int32 day = 3;
+		int32 hour = 4;
+		int32 minute = 5;
+		int32 second = 6;
+	}
+	Current current = 1;
+	string ntpserver = 2;
+	int32 timezone = 3;
+	
+  }
+  
   message Temperature {
     message Units {
       bool celsius = 1;
@@ -14,6 +30,14 @@ message Maintenance {
   message Diagnostics {
     message Inverters {
       message Unit {
+		message Diagnostics {
+			message Grounding { 
+				int32 Isolation = 1;
+			}
+			
+			Grounding grounding = 2;
+		}
+
         message OptimizersStatus {
           int32 total = 1;
           int32 online = 2;
@@ -41,6 +65,7 @@ message Maintenance {
 
         string invSn = 1;
         repeated Optimizer optimizer = 2;
+		Diagnostics diagnostics = 3;
         OptimizersStatus optimizersStatus = 4;
       }
 
@@ -52,5 +77,11 @@ message Maintenance {
     Inverters inverters = 1;
   }
 
+  message System {
+	string name = 1;
+	
+  }
+  Time time = 1;
   Diagnostics diagnostics = 6;
+  System system = 13;
 }

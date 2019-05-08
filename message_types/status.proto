@@ -78,7 +78,16 @@ message Status {
   }
 
   message ServerCommunication {
-
+	message CommunicationStatus {
+		bool physicalConnection = 1;
+		bool IP_Address = 2;
+		bool Gateway_Link = 3;
+		bool Internet_Link = 4;
+		bool Monitoring_Link = 5;
+		bool S_OK = 6;
+	}
+	
+	CommunicationStatus status = 1;
   }
 
   enum ManagerStatus {

@@ -7,6 +7,6 @@ class SolarEdge(Consumer):
     def get_status(self) -> Status:
         pass
 
-    @get("/maintenance")
-    def get_optomizers(self):
+    @get("/web/v1/maintenance")
+    def get_optimizers(self) -> Maintenance:
         pass
