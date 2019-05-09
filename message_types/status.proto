@@ -24,9 +24,9 @@ message Status {
       float voltage = 2;
       OptimizersStatus optimizersStatus = 3;
       Temperature temperature = 4;
-      string fan = 5;
+      int32 fan = 5;
       string errorCode = 6;
-      string subSystem = 7;
+      int32 subSystem = 7;
       string badPosition = 8;
     }
 
@@ -111,15 +111,15 @@ message Status {
   OptimizersStatus optimizersStatus = 6;
   bool sOk = 7;
   ManagerStatus status = 8;
-  string switchStatus = 9;
+  bool switchStatus = 9;
   float cosPhi = 10;
   float powerLimit = 11;
   int32 country = 12;
   Inverters inverters = 13;
   Communication communication = 14;
   EnergyStatistics energy = 15;
-  string portiaErrorCode = 16;
-  string portiaSubsystem = 17;
+  int32 portiaErrorCode = 16;
+  int32 portiaSubsystem = 17;
   Evese evese = 18;
   repeated Meter metersList = 19;
   repeated Battery batteriesList = 20;
