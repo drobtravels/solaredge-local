@@ -32,7 +32,8 @@ To use:
 ```
 from solaredge_local import SolarEdge
 client = SolarEdge("http://<inverter ip address>")
-client.get_status()
+client.get_status()  # Provides general energy and other overview information
+client.get_maintenance() # Provides optimizer level information and other details
 ```
 
 ### API Endpoints
@@ -116,3 +117,16 @@ Here is an example for the status API:
 ```
 curl -s http://<inverter ip>/web/v1/status | protoc --decode Status message_types/status.proto
 ```
+
+### Updating Protocol Buffer response
+
+To add or change the Protocol Buffer defintions, please do the following
+
+1. Manually change the `message_types/*.proto` files as required
+2. Test the file using `curl` as described in [View Parsed Response](#view-parsed-response)
+3. Update the generated `*_pb2.py` files for each file changed by running a command like:
+
+    ```
+    protoc -I=message_types --python_out=solaredge_local message_types/<filename_changed>.proto
+    ```
+4. Commit the generated updates
