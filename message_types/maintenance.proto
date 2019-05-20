@@ -30,14 +30,13 @@ message Maintenance {
   message Diagnostics {
     message Inverters {
       message Unit {
-		message Diagnostics {
-			message Grounding { 
-				int32 Isolation = 1;
-			}
-			
-			Grounding grounding = 2;
-		}
-
+      	message Isolation {
+          message Iso {
+            int32 isolation = 1;
+          }
+          int32 faultLocation = 3;
+          Iso rIso = 2;
+        }
         message OptimizersStatus {
           int32 total = 1;
           int32 online = 2;
@@ -65,7 +64,7 @@ message Maintenance {
 
         string invSn = 1;
         repeated Optimizer optimizer = 2;
-		Diagnostics diagnostics = 3;
+		Isolation isolation = 3;
         OptimizersStatus optimizersStatus = 4;
       }
 
