@@ -34,6 +34,8 @@ from solaredge_local import SolarEdge
 client = SolarEdge("http://<inverter ip address>")
 client.get_status()  # Provides general energy and other overview information
 client.get_maintenance() # Provides optimizer level information and other details
+client.get_information() # Provides software versions and error log list.
+client.get_power_control() # Provides power control information and other details.
 ```
 
 ### API Endpoints
