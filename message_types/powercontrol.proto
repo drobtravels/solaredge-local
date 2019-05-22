@@ -42,7 +42,7 @@ message PowerControl {
             message CosPhi {
                 int32 value = 1;
             }
-            Percentage ppercentage = 1;
+            pPercentage ppercentage = 1;
             CosPhi cosphi = 2;
         }
 

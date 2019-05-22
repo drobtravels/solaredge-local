@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='powercontrol.proto',
   package='',
   syntax='proto3',
-  serialized_pb=_b('\n\x12powercontrol.proto\"\xa1\x1d\n\x0cPowerControl\x12.\n\x0bgridControl\x18\x01 \x01(\x0b\x32\x19.PowerControl.GridControl\x12\x32\n\renergyManager\x18\x02 \x01(\x0b\x32\x1b.PowerControl.EnergyManager\x12 \n\x04rrcr\x18\x03 \x01(\x0b\x32\x12.PowerControl.Rrcr\x12\x32\n\rreactivePower\x18\x04 \x01(\x0b\x32\x1b.PowerControl.ReactivePower\x12.\n\x0b\x61\x63tivePower\x18\x05 \x01(\x0b\x32\x19.PowerControl.ActivePower\x12\x30\n\x0cwakeupConfig\x18\x06 \x01(\x0b\x32\x1a.PowerControl.WakeupConfig\x12(\n\x08\x61\x64vanced\x18\x07 \x01(\x0b\x32\x16.PowerControl.Advanced\x1a\"\n\x0bGridControl\x12\x13\n\x0bgridcontrol\x18\x01 \x01(\x08\x1a\x9b\x02\n\rEnergyManager\x12>\n\x0climitControl\x18\x01 \x01(\x0b\x32(.PowerControl.EnergyManager.LimitControl\x1a\xc9\x01\n\x0cLimitControl\x12I\n\x0b\x63ontrolMode\x18\x01 \x01(\x0b\x32\x34.PowerControl.EnergyManager.LimitControl.ControlMode\x1an\n\x0b\x43ontrolMode\x12\x15\n\rexportControl\x18\x01 \x01(\x08\x12\x19\n\x11productionControl\x18\x02 \x01(\x08\x12\x1c\n\x14minimumImportControl\x18\x03 \x01(\x08\x12\x0f\n\x07\x64isable\x18\x04 \x01(\x08\x1a\x14\n\x04Rrcr\x12\x0c\n\x04rrcr\x18\x11 \x01(\x08\x1a\x90\x0b\n\rReactivePower\x12.\n\x04mode\x18\x01 \x01(\x0b\x32 .PowerControl.ReactivePower.Mode\x12\x32\n\x06\x63osphi\x18\x02 \x01(\x0b\x32\".PowerControl.ReactivePower.Cosphi\x12<\n\x0b\x63osphiPList\x18\x03 \x03(\x0b\x32\'.PowerControl.ReactivePower.CosphiPList\x12(\n\x01q\x18\x04 \x01(\x0b\x32\x1d.PowerControl.ReactivePower.Q\x12\x32\n\x06quList\x18\x05 \x03(\x0b\x32\".PowerControl.ReactivePower.QuList\x12\x32\n\x06qpList\x18\x06 \x03(\x0b\x32\".PowerControl.ReactivePower.QpList\x12\x36\n\x08uNominal\x18\x07 \x01(\x0b\x32$.PowerControl.ReactivePower.Unominal\x12@\n\rpowerPriority\x18\x08 \x01(\x0b\x32).PowerControl.ReactivePower.PowerPriority\x1aM\n\x04Mode\x12\x0e\n\x06\x63osphi\x18\x01 \x01(\x08\x12\x0f\n\x07\x63osphip\x18\x02 \x01(\x08\x12\t\n\x01q\x18\x03 \x01(\x08\x12\x0c\n\x04quQp\x18\x04 \x01(\x08\x12\x0b\n\x03pri\x18\x05 \x01(\x08\x1a\x18\n\x06\x43osphi\x12\x0e\n\x06\x63osphi\x18\x01 \x01(\x05\x1a\xc9\x01\n\x0b\x43osphiPList\x12?\n\x03key\x18\x01 \x01(\x0b\x32\x32.PowerControl.ReactivePower.CosphiPList.Percentage\x12=\n\x05value\x18\x02 \x01(\x0b\x32..PowerControl.ReactivePower.CosphiPList.CosPhi\x1a \n\nPercentage\x12\x12\n\npercentage\x18\x01 \x01(\x05\x1a\x18\n\x06\x43osPhi\x12\x0e\n\x06\x63osphi\x18\x01 \x01(\x05\x1a\x0e\n\x01Q\x12\t\n\x01q\x18\x01 \x01(\x05\x1a\xcc\x01\n\x06QuList\x12;\n\x03key\x18\x01 \x01(\x0b\x32..PowerControl.ReactivePower.QuList.uPercentage\x12=\n\x05value\x18\x02 \x01(\x0b\x32..PowerControl.ReactivePower.QuList.qPercentage\x1a\"\n\x0buPercentage\x12\x13\n\x0bupercentage\x18\x01 \x01(\x05\x1a\"\n\x0bqPercentage\x12\x13\n\x0bqpercentage\x18\x01 \x01(\x05\x1a\xcc\x01\n\x06QpList\x12;\n\x03key\x18\x01 \x01(\x0b\x32..PowerControl.ReactivePower.QpList.pPercentage\x12=\n\x05value\x18\x02 \x01(\x0b\x32..PowerControl.ReactivePower.QpList.qPercentage\x1a\"\n\x0bpPercentage\x12\x13\n\x0bppercentage\x18\x01 \x01(\x05\x1a\"\n\x0bqPercentage\x12\x13\n\x0bqpercentage\x18\x01 \x01(\x05\x1a\x1c\n\x08Unominal\x12\x10\n\x08unominal\x18\x01 \x01(\x05\x1a\xcf\x01\n\rPowerPriority\x12@\n\x06\x61\x63tive\x18\x01 \x01(\x0b\x32\x30.PowerControl.ReactivePower.PowerPriority.Active\x12\x44\n\x08reactive\x18\x02 \x01(\x0b\x32\x32.PowerControl.ReactivePower.PowerPriority.Reactive\x1a\x18\n\x06\x41\x63tive\x12\x0e\n\x06\x61\x63tive\x18\x01 \x01(\x08\x1a\x1c\n\x08Reactive\x12\x10\n\x08reactive\x18\x01 \x01(\x08\x1a\x82\x07\n\x0b\x41\x63tivePower\x12\x38\n\npowerLimit\x18\x01 \x01(\x0b\x32$.PowerControl.ActivePower.PowerLimit\x12<\n\x0c\x63urrentLimit\x18\x02 \x01(\x0b\x32&.PowerControl.ActivePower.CurrentLimit\x12@\n\x0ewakeupGradient\x18\x03 \x01(\x0b\x32(.PowerControl.ActivePower.WakeupGradient\x12\x14\n\x0cgradientTime\x18\x04 \x01(\x05\x12\x30\n\x06pfList\x18\x05 \x03(\x0b\x32 .PowerControl.ActivePower.PfList\x12\x30\n\x06pvList\x18\x06 \x03(\x0b\x32 .PowerControl.ActivePower.PvList\x12\x34\n\x08rampRate\x18\x08 \x01(\x0b\x32\".PowerControl.ActivePower.RampRate\x1a \n\nPowerLimit\x12\x12\n\npowerlimit\x18\x01 \x01(\x05\x1a$\n\x0c\x43urrentLimit\x12\x14\n\x0c\x63urrentlimit\x18\x01 \x01(\x05\x1a(\n\x0eWakeupGradient\x12\x16\n\x0ewakeupgradient\x18\x01 \x01(\x08\x1a\xad\x01\n\x06PfList\x12\x30\n\x03key\x18\x01 \x01(\x0b\x32#.PowerControl.ActivePower.PfList.Hz\x12;\n\x05value\x18\x02 \x01(\x0b\x32,.PowerControl.ActivePower.PfList.pPercentage\x1a\x10\n\x02Hz\x12\n\n\x02hz\x18\x01 \x01(\x05\x1a\"\n\x0bpPercentage\x12\x13\n\x0bppercentage\x18\x01 \x01(\x05\x1a\xc8\x01\n\x06PvList\x12\x39\n\x03key\x18\x01 \x01(\x0b\x32,.PowerControl.ActivePower.PvList.vPercentage\x12;\n\x05value\x18\x02 \x01(\x0b\x32,.PowerControl.ActivePower.PvList.pPercentage\x1a\"\n\x0bvPercentage\x12\x13\n\x0bvpercentage\x18\x01 \x01(\x05\x1a\"\n\x0bpPercentage\x12\x13\n\x0bppercentage\x18\x01 \x01(\x05\x1a\x1c\n\x08RampRate\x12\x10\n\x08ramprate\x18\x01 \x01(\x05\x1a\xba\x03\n\x0cWakeupConfig\x12?\n\rminWakeupFreq\x18\x01 \x01(\x0b\x32(.PowerControl.WakeupConfig.MinWakeupFreq\x12?\n\rmaxWakeupFreq\x18\x02 \x01(\x0b\x32(.PowerControl.WakeupConfig.MaxWakeupFreq\x12\x41\n\x0eminWakeupVgrid\x18\x03 \x01(\x0b\x32).PowerControl.WakeupConfig.MinWakeupVgrid\x12\x41\n\x0emaxWakeupVgrid\x18\x04 \x01(\x0b\x32).PowerControl.WakeupConfig.MaxWakeupVgrid\x1a&\n\rMinWakeupFreq\x12\x15\n\rminwakeupfreq\x18\x01 \x01(\x05\x1a&\n\rMaxWakeupFreq\x12\x15\n\rmaxwakeupfreq\x18\x01 \x01(\x05\x1a(\n\x0eMinWakeupVgrid\x12\x16\n\x0eminwakeupvgrid\x18\x01 \x01(\x05\x1a(\n\x0eMaxWakeupVgrid\x12\x16\n\x0emaxwakeupvgrid\x18\x01 \x01(\x05\x1a\x9d\x02\n\x08\x41\x64vanced\x12-\n\x06setFrt\x18\x01 \x01(\x0b\x32\x1d.PowerControl.Advanced.SetFRT\x12\x35\n\nfrtKFactor\x18\x02 \x01(\x0b\x32!.PowerControl.Advanced.FrtKFactor\x12\x41\n\x10zeroLimitControl\x18\x03 \x01(\x0b\x32\'.PowerControl.Advanced.ZeroLimitControl\x1a\x18\n\x06SetFRT\x12\x0e\n\x06setfrt\x18\x01 \x01(\x05\x1a \n\nFrtKFactor\x12\x12\n\nfrtkfactor\x18\x01 \x01(\x05\x1a,\n\x10ZeroLimitControl\x12\x18\n\x10zerolimitcontrol\x18\x01 \x01(\x05\x62\x06proto3')
+  serialized_pb=_b('\n\x12powercontrol.proto\"\xe0\x1c\n\x0cPowerControl\x12.\n\x0bgridControl\x18\x01 \x01(\x0b\x32\x19.PowerControl.GridControl\x12\x32\n\renergyManager\x18\x02 \x01(\x0b\x32\x1b.PowerControl.EnergyManager\x12 \n\x04rrcr\x18\x03 \x01(\x0b\x32\x12.PowerControl.Rrcr\x12\x32\n\rreactivePower\x18\x04 \x01(\x0b\x32\x1b.PowerControl.ReactivePower\x12.\n\x0b\x61\x63tivePower\x18\x05 \x01(\x0b\x32\x19.PowerControl.ActivePower\x12\x30\n\x0cwakeupConfig\x18\x06 \x01(\x0b\x32\x1a.PowerControl.WakeupConfig\x12(\n\x08\x61\x64vanced\x18\x07 \x01(\x0b\x32\x16.PowerControl.Advanced\x1a\x1e\n\x0bGridControl\x12\x0f\n\x07\x65nabled\x18\x01 \x01(\x08\x1a\x9b\x02\n\rEnergyManager\x12>\n\x0climitControl\x18\x01 \x01(\x0b\x32(.PowerControl.EnergyManager.LimitControl\x1a\xc9\x01\n\x0cLimitControl\x12I\n\x0b\x63ontrolMode\x18\x01 \x01(\x0b\x32\x34.PowerControl.EnergyManager.LimitControl.ControlMode\x1an\n\x0b\x43ontrolMode\x12\x15\n\rexportControl\x18\x01 \x01(\x08\x12\x19\n\x11productionControl\x18\x02 \x01(\x08\x12\x1c\n\x14minimumImportControl\x18\x03 \x01(\x08\x12\x0f\n\x07\x64isable\x18\x04 \x01(\x08\x1a\x16\n\x04Rrcr\x12\x0e\n\x06\x65nable\x18\x11 \x01(\x08\x1a\x95\x0b\n\rReactivePower\x12.\n\x04mode\x18\x01 \x01(\x0b\x32 .PowerControl.ReactivePower.Mode\x12\x32\n\x06\x63osphi\x18\x02 \x01(\x0b\x32\".PowerControl.ReactivePower.Cosphi\x12<\n\x0b\x63osphiPList\x18\x03 \x03(\x0b\x32\'.PowerControl.ReactivePower.CosphiPList\x12(\n\x01q\x18\x04 \x01(\x0b\x32\x1d.PowerControl.ReactivePower.Q\x12\x32\n\x06quList\x18\x05 \x03(\x0b\x32\".PowerControl.ReactivePower.QuList\x12\x32\n\x06qpList\x18\x06 \x03(\x0b\x32\".PowerControl.ReactivePower.QpList\x12\x36\n\x08uNominal\x18\x07 \x01(\x0b\x32$.PowerControl.ReactivePower.Unominal\x12@\n\rpowerPriority\x18\x08 \x01(\x0b\x32).PowerControl.ReactivePower.PowerPriority\x1aM\n\x04Mode\x12\x0e\n\x06\x63osphi\x18\x01 \x01(\x08\x12\x0f\n\x07\x63osphip\x18\x02 \x01(\x08\x12\t\n\x01q\x18\x03 \x01(\x08\x12\x0c\n\x04quQp\x18\x04 \x01(\x08\x12\x0b\n\x03pri\x18\x05 \x01(\x08\x1a\x17\n\x06\x43osphi\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\xce\x01\n\x0b\x43osphiPList\x12H\n\x0bppercentage\x18\x01 \x01(\x0b\x32\x33.PowerControl.ReactivePower.CosphiPList.pPercentage\x12>\n\x06\x63osphi\x18\x02 \x01(\x0b\x32..PowerControl.ReactivePower.CosphiPList.CosPhi\x1a\x1c\n\x0bpPercentage\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x17\n\x06\x43osPhi\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x12\n\x01Q\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\xce\x01\n\x06QuList\x12\x43\n\x0bupercentage\x18\x01 \x01(\x0b\x32..PowerControl.ReactivePower.QuList.uPercentage\x12\x43\n\x0bqpercentage\x18\x02 \x01(\x0b\x32..PowerControl.ReactivePower.QuList.qPercentage\x1a\x1c\n\x0buPercentage\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x1c\n\x0bqPercentage\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\xce\x01\n\x06QpList\x12\x43\n\x0bppercentage\x18\x01 \x01(\x0b\x32..PowerControl.ReactivePower.QpList.pPercentage\x12\x43\n\x0bqpercentage\x18\x02 \x01(\x0b\x32..PowerControl.ReactivePower.QpList.qPercentage\x1a\x1c\n\x0bpPercentage\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x1c\n\x0bqPercentage\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x19\n\x08Unominal\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\xcb\x01\n\rPowerPriority\x12@\n\x06\x61\x63tive\x18\x01 \x01(\x0b\x32\x30.PowerControl.ReactivePower.PowerPriority.Active\x12\x44\n\x08reactive\x18\x02 \x01(\x0b\x32\x32.PowerControl.ReactivePower.PowerPriority.Reactive\x1a\x17\n\x06\x41\x63tive\x12\r\n\x05value\x18\x01 \x01(\x08\x1a\x19\n\x08Reactive\x12\r\n\x05value\x18\x01 \x01(\x08\x1a\xef\x06\n\x0b\x41\x63tivePower\x12\x38\n\npowerLimit\x18\x01 \x01(\x0b\x32$.PowerControl.ActivePower.PowerLimit\x12<\n\x0c\x63urrentLimit\x18\x02 \x01(\x0b\x32&.PowerControl.ActivePower.CurrentLimit\x12@\n\x0ewakeupGradient\x18\x03 \x01(\x0b\x32(.PowerControl.ActivePower.WakeupGradient\x12\x14\n\x0cgradientTime\x18\x04 \x01(\x05\x12\x30\n\x06pfList\x18\x05 \x03(\x0b\x32 .PowerControl.ActivePower.PfList\x12\x30\n\x06pvList\x18\x06 \x03(\x0b\x32 .PowerControl.ActivePower.PvList\x12\x34\n\x08rampRate\x18\x08 \x01(\x0b\x32\".PowerControl.ActivePower.RampRate\x1a\x1b\n\nPowerLimit\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x1d\n\x0c\x43urrentLimit\x12\r\n\x05value\x18\x01 \x01(\x05\x1a \n\x0eWakeupGradient\x12\x0e\n\x06\x65nable\x18\x01 \x01(\x08\x1a\xaf\x01\n\x06PfList\x12/\n\x02hz\x18\x01 \x01(\x0b\x32#.PowerControl.ActivePower.PfList.Hz\x12\x41\n\x0bppercentage\x18\x02 \x01(\x0b\x32,.PowerControl.ActivePower.PfList.pPercentage\x1a\x13\n\x02Hz\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x1c\n\x0bpPercentage\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\xca\x01\n\x06PvList\x12\x41\n\x0bvpercentage\x18\x01 \x01(\x0b\x32,.PowerControl.ActivePower.PvList.vPercentage\x12\x41\n\x0bppercentage\x18\x02 \x01(\x0b\x32,.PowerControl.ActivePower.PvList.pPercentage\x1a\x1c\n\x0bvPercentage\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x1c\n\x0bpPercentage\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x19\n\x08RampRate\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x98\x03\n\x0cWakeupConfig\x12?\n\rminWakeupFreq\x18\x01 \x01(\x0b\x32(.PowerControl.WakeupConfig.MinWakeupFreq\x12?\n\rmaxWakeupFreq\x18\x02 \x01(\x0b\x32(.PowerControl.WakeupConfig.MaxWakeupFreq\x12\x41\n\x0eminWakeupVgrid\x18\x03 \x01(\x0b\x32).PowerControl.WakeupConfig.MinWakeupVgrid\x12\x41\n\x0emaxWakeupVgrid\x18\x04 \x01(\x0b\x32).PowerControl.WakeupConfig.MaxWakeupVgrid\x1a\x1e\n\rMinWakeupFreq\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x1e\n\rMaxWakeupFreq\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x1f\n\x0eMinWakeupVgrid\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x1f\n\x0eMaxWakeupVgrid\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\x8e\x02\n\x08\x41\x64vanced\x12-\n\x06setFrt\x18\x01 \x01(\x0b\x32\x1d.PowerControl.Advanced.SetFRT\x12\x35\n\nfrtKFactor\x18\x02 \x01(\x0b\x32!.PowerControl.Advanced.FrtKFactor\x12\x41\n\x10zeroLimitControl\x18\x03 \x01(\x0b\x32\'.PowerControl.Advanced.ZeroLimitControl\x1a\x18\n\x06SetFRT\x12\x0e\n\x06\x65nable\x18\x01 \x01(\x05\x1a\x1b\n\nFrtKFactor\x12\r\n\x05value\x18\x01 \x01(\x05\x1a\"\n\x10ZeroLimitControl\x12\x0e\n\x06\x65nable\x18\x01 \x01(\x05\x62\x06proto3')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -34,7 +34,7 @@ _POWERCONTROL_GRIDCONTROL = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='gridcontrol', full_name='PowerControl.GridControl.gridcontrol', index=0,
+      name='enabled', full_name='PowerControl.GridControl.enabled', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -53,7 +53,7 @@ _POWERCONTROL_GRIDCONTROL = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=365,
-  serialized_end=399,
+  serialized_end=395,
 )
 
 _POWERCONTROL_ENERGYMANAGER_LIMITCONTROL_CONTROLMODE = _descriptor.Descriptor(
@@ -103,8 +103,8 @@ _POWERCONTROL_ENERGYMANAGER_LIMITCONTROL_CONTROLMODE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=575,
-  serialized_end=685,
+  serialized_start=571,
+  serialized_end=681,
 )
 
 _POWERCONTROL_ENERGYMANAGER_LIMITCONTROL = _descriptor.Descriptor(
@@ -133,8 +133,8 @@ _POWERCONTROL_ENERGYMANAGER_LIMITCONTROL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=484,
-  serialized_end=685,
+  serialized_start=480,
+  serialized_end=681,
 )
 
 _POWERCONTROL_ENERGYMANAGER = _descriptor.Descriptor(
@@ -163,8 +163,8 @@ _POWERCONTROL_ENERGYMANAGER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=402,
-  serialized_end=685,
+  serialized_start=398,
+  serialized_end=681,
 )
 
 _POWERCONTROL_RRCR = _descriptor.Descriptor(
@@ -175,7 +175,7 @@ _POWERCONTROL_RRCR = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='rrcr', full_name='PowerControl.Rrcr.rrcr', index=0,
+      name='enable', full_name='PowerControl.Rrcr.enable', index=0,
       number=17, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -193,8 +193,8 @@ _POWERCONTROL_RRCR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=687,
-  serialized_end=707,
+  serialized_start=683,
+  serialized_end=705,
 )
 
 _POWERCONTROL_REACTIVEPOWER_MODE = _descriptor.Descriptor(
@@ -251,8 +251,8 @@ _POWERCONTROL_REACTIVEPOWER_MODE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1157,
-  serialized_end=1234,
+  serialized_start=1155,
+  serialized_end=1232,
 )
 
 _POWERCONTROL_REACTIVEPOWER_COSPHI = _descriptor.Descriptor(
@@ -263,7 +263,7 @@ _POWERCONTROL_REACTIVEPOWER_COSPHI = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='cosphi', full_name='PowerControl.ReactivePower.Cosphi.cosphi', index=0,
+      name='value', full_name='PowerControl.ReactivePower.Cosphi.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -281,19 +281,19 @@ _POWERCONTROL_REACTIVEPOWER_COSPHI = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1236,
-  serialized_end=1260,
+  serialized_start=1234,
+  serialized_end=1257,
 )
 
-_POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_PERCENTAGE = _descriptor.Descriptor(
-  name='Percentage',
-  full_name='PowerControl.ReactivePower.CosphiPList.Percentage',
+_POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_PPERCENTAGE = _descriptor.Descriptor(
+  name='pPercentage',
+  full_name='PowerControl.ReactivePower.CosphiPList.pPercentage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='percentage', full_name='PowerControl.ReactivePower.CosphiPList.Percentage.percentage', index=0,
+      name='value', full_name='PowerControl.ReactivePower.CosphiPList.pPercentage.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -311,8 +311,8 @@ _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_PERCENTAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1406,
-  serialized_end=1438,
+  serialized_start=1413,
+  serialized_end=1441,
 )
 
 _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_COSPHI = _descriptor.Descriptor(
@@ -323,7 +323,7 @@ _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_COSPHI = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='cosphi', full_name='PowerControl.ReactivePower.CosphiPList.CosPhi.cosphi', index=0,
+      name='value', full_name='PowerControl.ReactivePower.CosphiPList.CosPhi.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -341,8 +341,8 @@ _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_COSPHI = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1440,
-  serialized_end=1464,
+  serialized_start=1443,
+  serialized_end=1466,
 )
 
 _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST = _descriptor.Descriptor(
@@ -353,14 +353,14 @@ _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='key', full_name='PowerControl.ReactivePower.CosphiPList.key', index=0,
+      name='ppercentage', full_name='PowerControl.ReactivePower.CosphiPList.ppercentage', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='value', full_name='PowerControl.ReactivePower.CosphiPList.value', index=1,
+      name='cosphi', full_name='PowerControl.ReactivePower.CosphiPList.cosphi', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -369,7 +369,7 @@ _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST = _descriptor.Descriptor(
   ],
   extensions=[
   ],
-  nested_types=[_POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_PERCENTAGE, _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_COSPHI, ],
+  nested_types=[_POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_PPERCENTAGE, _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_COSPHI, ],
   enum_types=[
   ],
   options=None,
@@ -378,8 +378,8 @@ _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1263,
-  serialized_end=1464,
+  serialized_start=1260,
+  serialized_end=1466,
 )
 
 _POWERCONTROL_REACTIVEPOWER_Q = _descriptor.Descriptor(
@@ -390,7 +390,7 @@ _POWERCONTROL_REACTIVEPOWER_Q = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='q', full_name='PowerControl.ReactivePower.Q.q', index=0,
+      name='value', full_name='PowerControl.ReactivePower.Q.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -408,8 +408,8 @@ _POWERCONTROL_REACTIVEPOWER_Q = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1466,
-  serialized_end=1480,
+  serialized_start=1468,
+  serialized_end=1486,
 )
 
 _POWERCONTROL_REACTIVEPOWER_QULIST_UPERCENTAGE = _descriptor.Descriptor(
@@ -420,7 +420,7 @@ _POWERCONTROL_REACTIVEPOWER_QULIST_UPERCENTAGE = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='upercentage', full_name='PowerControl.ReactivePower.QuList.uPercentage.upercentage', index=0,
+      name='value', full_name='PowerControl.ReactivePower.QuList.uPercentage.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -438,8 +438,8 @@ _POWERCONTROL_REACTIVEPOWER_QULIST_UPERCENTAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1617,
-  serialized_end=1651,
+  serialized_start=1637,
+  serialized_end=1665,
 )
 
 _POWERCONTROL_REACTIVEPOWER_QULIST_QPERCENTAGE = _descriptor.Descriptor(
@@ -450,7 +450,7 @@ _POWERCONTROL_REACTIVEPOWER_QULIST_QPERCENTAGE = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='qpercentage', full_name='PowerControl.ReactivePower.QuList.qPercentage.qpercentage', index=0,
+      name='value', full_name='PowerControl.ReactivePower.QuList.qPercentage.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -468,8 +468,8 @@ _POWERCONTROL_REACTIVEPOWER_QULIST_QPERCENTAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1653,
-  serialized_end=1687,
+  serialized_start=1667,
+  serialized_end=1695,
 )
 
 _POWERCONTROL_REACTIVEPOWER_QULIST = _descriptor.Descriptor(
@@ -480,14 +480,14 @@ _POWERCONTROL_REACTIVEPOWER_QULIST = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='key', full_name='PowerControl.ReactivePower.QuList.key', index=0,
+      name='upercentage', full_name='PowerControl.ReactivePower.QuList.upercentage', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='value', full_name='PowerControl.ReactivePower.QuList.value', index=1,
+      name='qpercentage', full_name='PowerControl.ReactivePower.QuList.qpercentage', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -505,8 +505,8 @@ _POWERCONTROL_REACTIVEPOWER_QULIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1483,
-  serialized_end=1687,
+  serialized_start=1489,
+  serialized_end=1695,
 )
 
 _POWERCONTROL_REACTIVEPOWER_QPLIST_PPERCENTAGE = _descriptor.Descriptor(
@@ -517,7 +517,7 @@ _POWERCONTROL_REACTIVEPOWER_QPLIST_PPERCENTAGE = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ppercentage', full_name='PowerControl.ReactivePower.QpList.pPercentage.ppercentage', index=0,
+      name='value', full_name='PowerControl.ReactivePower.QpList.pPercentage.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -535,8 +535,8 @@ _POWERCONTROL_REACTIVEPOWER_QPLIST_PPERCENTAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1824,
-  serialized_end=1858,
+  serialized_start=1413,
+  serialized_end=1441,
 )
 
 _POWERCONTROL_REACTIVEPOWER_QPLIST_QPERCENTAGE = _descriptor.Descriptor(
@@ -547,7 +547,7 @@ _POWERCONTROL_REACTIVEPOWER_QPLIST_QPERCENTAGE = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='qpercentage', full_name='PowerControl.ReactivePower.QpList.qPercentage.qpercentage', index=0,
+      name='value', full_name='PowerControl.ReactivePower.QpList.qPercentage.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -565,8 +565,8 @@ _POWERCONTROL_REACTIVEPOWER_QPLIST_QPERCENTAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1653,
-  serialized_end=1687,
+  serialized_start=1667,
+  serialized_end=1695,
 )
 
 _POWERCONTROL_REACTIVEPOWER_QPLIST = _descriptor.Descriptor(
@@ -577,14 +577,14 @@ _POWERCONTROL_REACTIVEPOWER_QPLIST = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='key', full_name='PowerControl.ReactivePower.QpList.key', index=0,
+      name='ppercentage', full_name='PowerControl.ReactivePower.QpList.ppercentage', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='value', full_name='PowerControl.ReactivePower.QpList.value', index=1,
+      name='qpercentage', full_name='PowerControl.ReactivePower.QpList.qpercentage', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -602,8 +602,8 @@ _POWERCONTROL_REACTIVEPOWER_QPLIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1690,
-  serialized_end=1894,
+  serialized_start=1698,
+  serialized_end=1904,
 )
 
 _POWERCONTROL_REACTIVEPOWER_UNOMINAL = _descriptor.Descriptor(
@@ -614,7 +614,7 @@ _POWERCONTROL_REACTIVEPOWER_UNOMINAL = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='unominal', full_name='PowerControl.ReactivePower.Unominal.unominal', index=0,
+      name='value', full_name='PowerControl.ReactivePower.Unominal.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -632,8 +632,8 @@ _POWERCONTROL_REACTIVEPOWER_UNOMINAL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1896,
-  serialized_end=1924,
+  serialized_start=1906,
+  serialized_end=1931,
 )
 
 _POWERCONTROL_REACTIVEPOWER_POWERPRIORITY_ACTIVE = _descriptor.Descriptor(
@@ -644,7 +644,7 @@ _POWERCONTROL_REACTIVEPOWER_POWERPRIORITY_ACTIVE = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='active', full_name='PowerControl.ReactivePower.PowerPriority.Active.active', index=0,
+      name='value', full_name='PowerControl.ReactivePower.PowerPriority.Active.value', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -662,8 +662,8 @@ _POWERCONTROL_REACTIVEPOWER_POWERPRIORITY_ACTIVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2080,
-  serialized_end=2104,
+  serialized_start=2087,
+  serialized_end=2110,
 )
 
 _POWERCONTROL_REACTIVEPOWER_POWERPRIORITY_REACTIVE = _descriptor.Descriptor(
@@ -674,7 +674,7 @@ _POWERCONTROL_REACTIVEPOWER_POWERPRIORITY_REACTIVE = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='reactive', full_name='PowerControl.ReactivePower.PowerPriority.Reactive.reactive', index=0,
+      name='value', full_name='PowerControl.ReactivePower.PowerPriority.Reactive.value', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -692,8 +692,8 @@ _POWERCONTROL_REACTIVEPOWER_POWERPRIORITY_REACTIVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2106,
-  serialized_end=2134,
+  serialized_start=2112,
+  serialized_end=2137,
 )
 
 _POWERCONTROL_REACTIVEPOWER_POWERPRIORITY = _descriptor.Descriptor(
@@ -729,8 +729,8 @@ _POWERCONTROL_REACTIVEPOWER_POWERPRIORITY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1927,
-  serialized_end=2134,
+  serialized_start=1934,
+  serialized_end=2137,
 )
 
 _POWERCONTROL_REACTIVEPOWER = _descriptor.Descriptor(
@@ -808,8 +808,8 @@ _POWERCONTROL_REACTIVEPOWER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=710,
-  serialized_end=2134,
+  serialized_start=708,
+  serialized_end=2137,
 )
 
 _POWERCONTROL_ACTIVEPOWER_POWERLIMIT = _descriptor.Descriptor(
@@ -820,7 +820,7 @@ _POWERCONTROL_ACTIVEPOWER_POWERLIMIT = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='powerlimit', full_name='PowerControl.ActivePower.PowerLimit.powerlimit', index=0,
+      name='value', full_name='PowerControl.ActivePower.PowerLimit.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -838,8 +838,8 @@ _POWERCONTROL_ACTIVEPOWER_POWERLIMIT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2514,
-  serialized_end=2546,
+  serialized_start=2517,
+  serialized_end=2544,
 )
 
 _POWERCONTROL_ACTIVEPOWER_CURRENTLIMIT = _descriptor.Descriptor(
@@ -850,7 +850,7 @@ _POWERCONTROL_ACTIVEPOWER_CURRENTLIMIT = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='currentlimit', full_name='PowerControl.ActivePower.CurrentLimit.currentlimit', index=0,
+      name='value', full_name='PowerControl.ActivePower.CurrentLimit.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -868,8 +868,8 @@ _POWERCONTROL_ACTIVEPOWER_CURRENTLIMIT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2548,
-  serialized_end=2584,
+  serialized_start=2546,
+  serialized_end=2575,
 )
 
 _POWERCONTROL_ACTIVEPOWER_WAKEUPGRADIENT = _descriptor.Descriptor(
@@ -880,7 +880,7 @@ _POWERCONTROL_ACTIVEPOWER_WAKEUPGRADIENT = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='wakeupgradient', full_name='PowerControl.ActivePower.WakeupGradient.wakeupgradient', index=0,
+      name='enable', full_name='PowerControl.ActivePower.WakeupGradient.enable', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -898,8 +898,8 @@ _POWERCONTROL_ACTIVEPOWER_WAKEUPGRADIENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2586,
-  serialized_end=2626,
+  serialized_start=2577,
+  serialized_end=2609,
 )
 
 _POWERCONTROL_ACTIVEPOWER_PFLIST_HZ = _descriptor.Descriptor(
@@ -910,7 +910,7 @@ _POWERCONTROL_ACTIVEPOWER_PFLIST_HZ = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='hz', full_name='PowerControl.ActivePower.PfList.Hz.hz', index=0,
+      name='value', full_name='PowerControl.ActivePower.PfList.Hz.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -928,8 +928,8 @@ _POWERCONTROL_ACTIVEPOWER_PFLIST_HZ = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2750,
-  serialized_end=2766,
+  serialized_start=2738,
+  serialized_end=2757,
 )
 
 _POWERCONTROL_ACTIVEPOWER_PFLIST_PPERCENTAGE = _descriptor.Descriptor(
@@ -940,7 +940,7 @@ _POWERCONTROL_ACTIVEPOWER_PFLIST_PPERCENTAGE = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ppercentage', full_name='PowerControl.ActivePower.PfList.pPercentage.ppercentage', index=0,
+      name='value', full_name='PowerControl.ActivePower.PfList.pPercentage.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -958,8 +958,8 @@ _POWERCONTROL_ACTIVEPOWER_PFLIST_PPERCENTAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1824,
-  serialized_end=1858,
+  serialized_start=1413,
+  serialized_end=1441,
 )
 
 _POWERCONTROL_ACTIVEPOWER_PFLIST = _descriptor.Descriptor(
@@ -970,14 +970,14 @@ _POWERCONTROL_ACTIVEPOWER_PFLIST = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='key', full_name='PowerControl.ActivePower.PfList.key', index=0,
+      name='hz', full_name='PowerControl.ActivePower.PfList.hz', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='value', full_name='PowerControl.ActivePower.PfList.value', index=1,
+      name='ppercentage', full_name='PowerControl.ActivePower.PfList.ppercentage', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -995,8 +995,8 @@ _POWERCONTROL_ACTIVEPOWER_PFLIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2629,
-  serialized_end=2802,
+  serialized_start=2612,
+  serialized_end=2787,
 )
 
 _POWERCONTROL_ACTIVEPOWER_PVLIST_VPERCENTAGE = _descriptor.Descriptor(
@@ -1007,7 +1007,7 @@ _POWERCONTROL_ACTIVEPOWER_PVLIST_VPERCENTAGE = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='vpercentage', full_name='PowerControl.ActivePower.PvList.vPercentage.vpercentage', index=0,
+      name='value', full_name='PowerControl.ActivePower.PvList.vPercentage.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1025,8 +1025,8 @@ _POWERCONTROL_ACTIVEPOWER_PVLIST_VPERCENTAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2935,
-  serialized_end=2969,
+  serialized_start=2934,
+  serialized_end=2962,
 )
 
 _POWERCONTROL_ACTIVEPOWER_PVLIST_PPERCENTAGE = _descriptor.Descriptor(
@@ -1037,7 +1037,7 @@ _POWERCONTROL_ACTIVEPOWER_PVLIST_PPERCENTAGE = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ppercentage', full_name='PowerControl.ActivePower.PvList.pPercentage.ppercentage', index=0,
+      name='value', full_name='PowerControl.ActivePower.PvList.pPercentage.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1055,8 +1055,8 @@ _POWERCONTROL_ACTIVEPOWER_PVLIST_PPERCENTAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1824,
-  serialized_end=1858,
+  serialized_start=1413,
+  serialized_end=1441,
 )
 
 _POWERCONTROL_ACTIVEPOWER_PVLIST = _descriptor.Descriptor(
@@ -1067,14 +1067,14 @@ _POWERCONTROL_ACTIVEPOWER_PVLIST = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='key', full_name='PowerControl.ActivePower.PvList.key', index=0,
+      name='vpercentage', full_name='PowerControl.ActivePower.PvList.vpercentage', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='value', full_name='PowerControl.ActivePower.PvList.value', index=1,
+      name='ppercentage', full_name='PowerControl.ActivePower.PvList.ppercentage', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -1092,8 +1092,8 @@ _POWERCONTROL_ACTIVEPOWER_PVLIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2805,
-  serialized_end=3005,
+  serialized_start=2790,
+  serialized_end=2992,
 )
 
 _POWERCONTROL_ACTIVEPOWER_RAMPRATE = _descriptor.Descriptor(
@@ -1104,7 +1104,7 @@ _POWERCONTROL_ACTIVEPOWER_RAMPRATE = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ramprate', full_name='PowerControl.ActivePower.RampRate.ramprate', index=0,
+      name='value', full_name='PowerControl.ActivePower.RampRate.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1122,8 +1122,8 @@ _POWERCONTROL_ACTIVEPOWER_RAMPRATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3007,
-  serialized_end=3035,
+  serialized_start=2994,
+  serialized_end=3019,
 )
 
 _POWERCONTROL_ACTIVEPOWER = _descriptor.Descriptor(
@@ -1194,8 +1194,8 @@ _POWERCONTROL_ACTIVEPOWER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2137,
-  serialized_end=3035,
+  serialized_start=2140,
+  serialized_end=3019,
 )
 
 _POWERCONTROL_WAKEUPCONFIG_MINWAKEUPFREQ = _descriptor.Descriptor(
@@ -1206,7 +1206,7 @@ _POWERCONTROL_WAKEUPCONFIG_MINWAKEUPFREQ = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='minwakeupfreq', full_name='PowerControl.WakeupConfig.MinWakeupFreq.minwakeupfreq', index=0,
+      name='value', full_name='PowerControl.WakeupConfig.MinWakeupFreq.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1224,8 +1224,8 @@ _POWERCONTROL_WAKEUPCONFIG_MINWAKEUPFREQ = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3318,
-  serialized_end=3356,
+  serialized_start=3302,
+  serialized_end=3332,
 )
 
 _POWERCONTROL_WAKEUPCONFIG_MAXWAKEUPFREQ = _descriptor.Descriptor(
@@ -1236,7 +1236,7 @@ _POWERCONTROL_WAKEUPCONFIG_MAXWAKEUPFREQ = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='maxwakeupfreq', full_name='PowerControl.WakeupConfig.MaxWakeupFreq.maxwakeupfreq', index=0,
+      name='value', full_name='PowerControl.WakeupConfig.MaxWakeupFreq.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1254,8 +1254,8 @@ _POWERCONTROL_WAKEUPCONFIG_MAXWAKEUPFREQ = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3358,
-  serialized_end=3396,
+  serialized_start=3334,
+  serialized_end=3364,
 )
 
 _POWERCONTROL_WAKEUPCONFIG_MINWAKEUPVGRID = _descriptor.Descriptor(
@@ -1266,7 +1266,7 @@ _POWERCONTROL_WAKEUPCONFIG_MINWAKEUPVGRID = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='minwakeupvgrid', full_name='PowerControl.WakeupConfig.MinWakeupVgrid.minwakeupvgrid', index=0,
+      name='value', full_name='PowerControl.WakeupConfig.MinWakeupVgrid.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1284,8 +1284,8 @@ _POWERCONTROL_WAKEUPCONFIG_MINWAKEUPVGRID = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3398,
-  serialized_end=3438,
+  serialized_start=3366,
+  serialized_end=3397,
 )
 
 _POWERCONTROL_WAKEUPCONFIG_MAXWAKEUPVGRID = _descriptor.Descriptor(
@@ -1296,7 +1296,7 @@ _POWERCONTROL_WAKEUPCONFIG_MAXWAKEUPVGRID = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='maxwakeupvgrid', full_name='PowerControl.WakeupConfig.MaxWakeupVgrid.maxwakeupvgrid', index=0,
+      name='value', full_name='PowerControl.WakeupConfig.MaxWakeupVgrid.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1314,8 +1314,8 @@ _POWERCONTROL_WAKEUPCONFIG_MAXWAKEUPVGRID = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3440,
-  serialized_end=3480,
+  serialized_start=3399,
+  serialized_end=3430,
 )
 
 _POWERCONTROL_WAKEUPCONFIG = _descriptor.Descriptor(
@@ -1365,8 +1365,8 @@ _POWERCONTROL_WAKEUPCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3038,
-  serialized_end=3480,
+  serialized_start=3022,
+  serialized_end=3430,
 )
 
 _POWERCONTROL_ADVANCED_SETFRT = _descriptor.Descriptor(
@@ -1377,7 +1377,7 @@ _POWERCONTROL_ADVANCED_SETFRT = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='setfrt', full_name='PowerControl.Advanced.SetFRT.setfrt', index=0,
+      name='enable', full_name='PowerControl.Advanced.SetFRT.enable', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1395,8 +1395,8 @@ _POWERCONTROL_ADVANCED_SETFRT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3664,
-  serialized_end=3688,
+  serialized_start=3614,
+  serialized_end=3638,
 )
 
 _POWERCONTROL_ADVANCED_FRTKFACTOR = _descriptor.Descriptor(
@@ -1407,7 +1407,7 @@ _POWERCONTROL_ADVANCED_FRTKFACTOR = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='frtkfactor', full_name='PowerControl.Advanced.FrtKFactor.frtkfactor', index=0,
+      name='value', full_name='PowerControl.Advanced.FrtKFactor.value', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1425,8 +1425,8 @@ _POWERCONTROL_ADVANCED_FRTKFACTOR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3690,
-  serialized_end=3722,
+  serialized_start=3640,
+  serialized_end=3667,
 )
 
 _POWERCONTROL_ADVANCED_ZEROLIMITCONTROL = _descriptor.Descriptor(
@@ -1437,7 +1437,7 @@ _POWERCONTROL_ADVANCED_ZEROLIMITCONTROL = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='zerolimitcontrol', full_name='PowerControl.Advanced.ZeroLimitControl.zerolimitcontrol', index=0,
+      name='enable', full_name='PowerControl.Advanced.ZeroLimitControl.enable', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1455,8 +1455,8 @@ _POWERCONTROL_ADVANCED_ZEROLIMITCONTROL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3724,
-  serialized_end=3768,
+  serialized_start=3669,
+  serialized_end=3703,
 )
 
 _POWERCONTROL_ADVANCED = _descriptor.Descriptor(
@@ -1499,8 +1499,8 @@ _POWERCONTROL_ADVANCED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3483,
-  serialized_end=3768,
+  serialized_start=3433,
+  serialized_end=3703,
 )
 
 _POWERCONTROL = _descriptor.Descriptor(
@@ -1572,7 +1572,7 @@ _POWERCONTROL = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=23,
-  serialized_end=3768,
+  serialized_end=3703,
 )
 
 _POWERCONTROL_GRIDCONTROL.containing_type = _POWERCONTROL
@@ -1584,21 +1584,21 @@ _POWERCONTROL_ENERGYMANAGER.containing_type = _POWERCONTROL
 _POWERCONTROL_RRCR.containing_type = _POWERCONTROL
 _POWERCONTROL_REACTIVEPOWER_MODE.containing_type = _POWERCONTROL_REACTIVEPOWER
 _POWERCONTROL_REACTIVEPOWER_COSPHI.containing_type = _POWERCONTROL_REACTIVEPOWER
-_POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_PERCENTAGE.containing_type = _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST
+_POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_PPERCENTAGE.containing_type = _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST
 _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_COSPHI.containing_type = _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST
-_POWERCONTROL_REACTIVEPOWER_COSPHIPLIST.fields_by_name['key'].message_type = _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_PERCENTAGE
-_POWERCONTROL_REACTIVEPOWER_COSPHIPLIST.fields_by_name['value'].message_type = _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_COSPHI
+_POWERCONTROL_REACTIVEPOWER_COSPHIPLIST.fields_by_name['ppercentage'].message_type = _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_PPERCENTAGE
+_POWERCONTROL_REACTIVEPOWER_COSPHIPLIST.fields_by_name['cosphi'].message_type = _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_COSPHI
 _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST.containing_type = _POWERCONTROL_REACTIVEPOWER
 _POWERCONTROL_REACTIVEPOWER_Q.containing_type = _POWERCONTROL_REACTIVEPOWER
 _POWERCONTROL_REACTIVEPOWER_QULIST_UPERCENTAGE.containing_type = _POWERCONTROL_REACTIVEPOWER_QULIST
 _POWERCONTROL_REACTIVEPOWER_QULIST_QPERCENTAGE.containing_type = _POWERCONTROL_REACTIVEPOWER_QULIST
-_POWERCONTROL_REACTIVEPOWER_QULIST.fields_by_name['key'].message_type = _POWERCONTROL_REACTIVEPOWER_QULIST_UPERCENTAGE
-_POWERCONTROL_REACTIVEPOWER_QULIST.fields_by_name['value'].message_type = _POWERCONTROL_REACTIVEPOWER_QULIST_QPERCENTAGE
+_POWERCONTROL_REACTIVEPOWER_QULIST.fields_by_name['upercentage'].message_type = _POWERCONTROL_REACTIVEPOWER_QULIST_UPERCENTAGE
+_POWERCONTROL_REACTIVEPOWER_QULIST.fields_by_name['qpercentage'].message_type = _POWERCONTROL_REACTIVEPOWER_QULIST_QPERCENTAGE
 _POWERCONTROL_REACTIVEPOWER_QULIST.containing_type = _POWERCONTROL_REACTIVEPOWER
 _POWERCONTROL_REACTIVEPOWER_QPLIST_PPERCENTAGE.containing_type = _POWERCONTROL_REACTIVEPOWER_QPLIST
 _POWERCONTROL_REACTIVEPOWER_QPLIST_QPERCENTAGE.containing_type = _POWERCONTROL_REACTIVEPOWER_QPLIST
-_POWERCONTROL_REACTIVEPOWER_QPLIST.fields_by_name['key'].message_type = _POWERCONTROL_REACTIVEPOWER_QPLIST_PPERCENTAGE
-_POWERCONTROL_REACTIVEPOWER_QPLIST.fields_by_name['value'].message_type = _POWERCONTROL_REACTIVEPOWER_QPLIST_QPERCENTAGE
+_POWERCONTROL_REACTIVEPOWER_QPLIST.fields_by_name['ppercentage'].message_type = _POWERCONTROL_REACTIVEPOWER_QPLIST_PPERCENTAGE
+_POWERCONTROL_REACTIVEPOWER_QPLIST.fields_by_name['qpercentage'].message_type = _POWERCONTROL_REACTIVEPOWER_QPLIST_QPERCENTAGE
 _POWERCONTROL_REACTIVEPOWER_QPLIST.containing_type = _POWERCONTROL_REACTIVEPOWER
 _POWERCONTROL_REACTIVEPOWER_UNOMINAL.containing_type = _POWERCONTROL_REACTIVEPOWER
 _POWERCONTROL_REACTIVEPOWER_POWERPRIORITY_ACTIVE.containing_type = _POWERCONTROL_REACTIVEPOWER_POWERPRIORITY
@@ -1620,13 +1620,13 @@ _POWERCONTROL_ACTIVEPOWER_CURRENTLIMIT.containing_type = _POWERCONTROL_ACTIVEPOW
 _POWERCONTROL_ACTIVEPOWER_WAKEUPGRADIENT.containing_type = _POWERCONTROL_ACTIVEPOWER
 _POWERCONTROL_ACTIVEPOWER_PFLIST_HZ.containing_type = _POWERCONTROL_ACTIVEPOWER_PFLIST
 _POWERCONTROL_ACTIVEPOWER_PFLIST_PPERCENTAGE.containing_type = _POWERCONTROL_ACTIVEPOWER_PFLIST
-_POWERCONTROL_ACTIVEPOWER_PFLIST.fields_by_name['key'].message_type = _POWERCONTROL_ACTIVEPOWER_PFLIST_HZ
-_POWERCONTROL_ACTIVEPOWER_PFLIST.fields_by_name['value'].message_type = _POWERCONTROL_ACTIVEPOWER_PFLIST_PPERCENTAGE
+_POWERCONTROL_ACTIVEPOWER_PFLIST.fields_by_name['hz'].message_type = _POWERCONTROL_ACTIVEPOWER_PFLIST_HZ
+_POWERCONTROL_ACTIVEPOWER_PFLIST.fields_by_name['ppercentage'].message_type = _POWERCONTROL_ACTIVEPOWER_PFLIST_PPERCENTAGE
 _POWERCONTROL_ACTIVEPOWER_PFLIST.containing_type = _POWERCONTROL_ACTIVEPOWER
 _POWERCONTROL_ACTIVEPOWER_PVLIST_VPERCENTAGE.containing_type = _POWERCONTROL_ACTIVEPOWER_PVLIST
 _POWERCONTROL_ACTIVEPOWER_PVLIST_PPERCENTAGE.containing_type = _POWERCONTROL_ACTIVEPOWER_PVLIST
-_POWERCONTROL_ACTIVEPOWER_PVLIST.fields_by_name['key'].message_type = _POWERCONTROL_ACTIVEPOWER_PVLIST_VPERCENTAGE
-_POWERCONTROL_ACTIVEPOWER_PVLIST.fields_by_name['value'].message_type = _POWERCONTROL_ACTIVEPOWER_PVLIST_PPERCENTAGE
+_POWERCONTROL_ACTIVEPOWER_PVLIST.fields_by_name['vpercentage'].message_type = _POWERCONTROL_ACTIVEPOWER_PVLIST_VPERCENTAGE
+_POWERCONTROL_ACTIVEPOWER_PVLIST.fields_by_name['ppercentage'].message_type = _POWERCONTROL_ACTIVEPOWER_PVLIST_PPERCENTAGE
 _POWERCONTROL_ACTIVEPOWER_PVLIST.containing_type = _POWERCONTROL_ACTIVEPOWER
 _POWERCONTROL_ACTIVEPOWER_RAMPRATE.containing_type = _POWERCONTROL_ACTIVEPOWER
 _POWERCONTROL_ACTIVEPOWER.fields_by_name['powerLimit'].message_type = _POWERCONTROL_ACTIVEPOWER_POWERLIMIT
@@ -1716,10 +1716,10 @@ PowerControl = _reflection.GeneratedProtocolMessageType('PowerControl', (_messag
 
     CosphiPList = _reflection.GeneratedProtocolMessageType('CosphiPList', (_message.Message,), dict(
 
-      Percentage = _reflection.GeneratedProtocolMessageType('Percentage', (_message.Message,), dict(
-        DESCRIPTOR = _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_PERCENTAGE,
+      pPercentage = _reflection.GeneratedProtocolMessageType('pPercentage', (_message.Message,), dict(
+        DESCRIPTOR = _POWERCONTROL_REACTIVEPOWER_COSPHIPLIST_PPERCENTAGE,
         __module__ = 'powercontrol_pb2'
-        # @@protoc_insertion_point(class_scope:PowerControl.ReactivePower.CosphiPList.Percentage)
+        # @@protoc_insertion_point(class_scope:PowerControl.ReactivePower.CosphiPList.pPercentage)
         ))
       ,
 
@@ -1970,7 +1970,7 @@ _sym_db.RegisterMessage(PowerControl.ReactivePower)
 _sym_db.RegisterMessage(PowerControl.ReactivePower.Mode)
 _sym_db.RegisterMessage(PowerControl.ReactivePower.Cosphi)
 _sym_db.RegisterMessage(PowerControl.ReactivePower.CosphiPList)
-_sym_db.RegisterMessage(PowerControl.ReactivePower.CosphiPList.Percentage)
+_sym_db.RegisterMessage(PowerControl.ReactivePower.CosphiPList.pPercentage)
 _sym_db.RegisterMessage(PowerControl.ReactivePower.CosphiPList.CosPhi)
 _sym_db.RegisterMessage(PowerControl.ReactivePower.Q)
 _sym_db.RegisterMessage(PowerControl.ReactivePower.QuList)
