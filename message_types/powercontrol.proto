@@ -2,7 +2,7 @@ syntax = "proto3";
 
 message PowerControl {
     message GridControl {
-        bool gridcontrol = 1;
+        bool enabled = 1;
     }
 
     message EnergyManager {
@@ -19,7 +19,7 @@ message PowerControl {
     }
 
     message Rrcr {
-        bool rrcr = 17;
+        bool enable = 17;
     }
 
     message ReactivePower {
@@ -32,56 +32,56 @@ message PowerControl {
         }
         
         message Cosphi {
-            int32 cosphi = 1;
+            int32 value = 1;
         }
 
         message CosphiPList {
-            message Percentage {
-                int32 percentage = 1;
+            message pPercentage {
+                int32 value = 1;
             }
             message CosPhi {
-                int32 cosphi = 1;
+                int32 value = 1;
             }
-            Percentage key = 1;
-            CosPhi value = 2;
+            Percentage ppercentage = 1;
+            CosPhi cosphi = 2;
         }
 
         message Q {
-            int32 q = 1;
+            int32 value = 1;
         }
 
         message QuList {
             message uPercentage {
-                int32 upercentage = 1;
+                int32 value = 1;
             }
             message qPercentage {
-                int32 qpercentage = 1;
+                int32 value = 1;
             }
-            uPercentage key = 1;
-            qPercentage value = 2;
+            uPercentage upercentage = 1;
+            qPercentage qpercentage = 2;
         }
 
         message QpList {
             message pPercentage {
-                int32 ppercentage = 1;
+                int32 value = 1;
             }
             message qPercentage {
-                int32 qpercentage = 1;
+                int32 value = 1;
             }
-            pPercentage key = 1;
-            qPercentage value = 2;
+            pPercentage ppercentage = 1;
+            qPercentage qpercentage = 2;
         }
 
         message Unominal {
-            int32 unominal = 1;
+            int32 value = 1;
         }
 
         message PowerPriority {
             message Active {
-                bool active = 1;
+                bool value = 1;
             }
             message Reactive {
-                bool reactive = 1;
+                bool value = 1;
             }
             Active active = 1;
             Reactive reactive = 2;
@@ -99,41 +99,41 @@ message PowerControl {
 
     message ActivePower {
         message PowerLimit {
-            int32 powerlimit = 1;
+            int32 value = 1;
         }
 
         message CurrentLimit {
-            int32 currentlimit = 1;
+            int32 value = 1;
         }
 
         message WakeupGradient {
-            bool wakeupgradient = 1;
+            bool enable = 1;
         }
 
         message PfList {
             message Hz {
-                int32 hz = 1;
+                int32 value = 1;
             }
             message pPercentage {
-                int32 ppercentage = 1;
+                int32 value = 1;
             }
-            Hz key = 1;
-            pPercentage value = 2;
+            Hz hz = 1;
+            pPercentage ppercentage = 2;
         }
 
         message PvList {
             message vPercentage {
-                int32 vpercentage = 1;
+                int32 value = 1;
             }
             message pPercentage {
-                int32 ppercentage = 1;
+                int32 value = 1;
             }
-            vPercentage key = 1;
-            pPercentage value = 2;
+            vPercentage vpercentage = 1;
+            pPercentage ppercentage = 2;
         }
 
         message RampRate {
-            int32 ramprate = 1;
+            int32 value = 1;
         }
 
         PowerLimit powerLimit = 1;
@@ -147,19 +147,19 @@ message PowerControl {
 
     message WakeupConfig{
         message MinWakeupFreq {
-            int32 minwakeupfreq = 1;
+            int32 value = 1;
         }
 
         message MaxWakeupFreq {
-            int32 maxwakeupfreq = 1;
+            int32 value = 1;
         }
         
         message MinWakeupVgrid {
-            int32 minwakeupvgrid = 1;
+            int32 value = 1;
         }
 
         message MaxWakeupVgrid {
-            int32 maxwakeupvgrid = 1;
+            int32 value = 1;
         }
 
         MinWakeupFreq minWakeupFreq = 1;
@@ -170,15 +170,15 @@ message PowerControl {
 
     message Advanced {
         message SetFRT {
-            int32 setfrt = 1;
+            int32 enable = 1;
         }
 
         message FrtKFactor {
-            int32 frtkfactor = 1;
+            int32 value = 1;
         }
 
         message ZeroLimitControl {
-            int32 zerolimitcontrol = 1;
+            int32 enable = 1;
         }
 
         SetFRT setFrt = 1;
