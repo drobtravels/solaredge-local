@@ -27,6 +27,7 @@ message Information {
         repeated LoggerList loggerList = 1;
     }
 
+    // Todo: add more information about: warningloglist, hwidslist & errorloglist.
     string sn = 1;
     Cpu cpu = 2;
     Dsp1 dsp1 = 3;
