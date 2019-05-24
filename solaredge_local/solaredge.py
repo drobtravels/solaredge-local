@@ -27,5 +27,5 @@ class SolarEdge(Consumer):
         pass
 
     @get("/web/v1/communication")
-    def get_power_control(self) -> Communication:
+    def get_communication(self) -> Communication:
         pass
