@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+message Information {
+    message Cpu {
+        int32 major = 1;
+        int32 minor = 2;
+        int32 build = 3;
+    }
+
+    message Dsp1 {
+        int32 major = 1;
+        int32 minor = 2;
+        int32 build = 3;
+    }
+
+    message Dsp2 {
+        int32 major = 1;
+        int32 minor = 2;
+        int32 build = 3;
+    }
+
+    message Errors {
+        message LoggerList {
+            int32 controllerid = 1;
+            int32 subsystem = 2;
+        }
+        repeated LoggerList loggerList = 1;
+    }
+
+    // Todo: add more information about: warningloglist, hwidslist & errorloglist.
+    string sn = 1;
+    Cpu cpu = 2;
+    Dsp1 dsp1 = 3;
+    Dsp2 dsp2 = 4;
+    Errors errors = 8;
+}

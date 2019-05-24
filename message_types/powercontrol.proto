@@ -1,0 +1,196 @@
+syntax = "proto3";
+
+message PowerControl {
+    message GridControl {
+        bool enabled = 1;
+    }
+
+    message EnergyManager {
+        message LimitControl {
+            message ControlMode {
+                bool exportControl = 1;
+                bool productionControl = 2;
+                bool minimumImportControl = 3;
+                bool disable = 4;
+            }
+            ControlMode controlMode = 1;
+        }
+        LimitControl limitControl = 1;
+    }
+
+    message Rrcr {
+        bool enable = 17;
+    }
+
+    message ReactivePower {
+        message Mode {
+            bool cosphi = 1;
+            bool cosphip = 2;
+            bool q = 3;
+            bool quQp = 4;
+            bool pri = 5;
+        }
+        
+        message Cosphi {
+            int32 value = 1;
+        }
+
+        message CosphiPList {
+            message pPercentage {
+                int32 value = 1;
+            }
+            message CosPhi {
+                int32 value = 1;
+            }
+            pPercentage ppercentage = 1;
+            CosPhi cosphi = 2;
+        }
+
+        message Q {
+            int32 value = 1;
+        }
+
+        message QuList {
+            message uPercentage {
+                int32 value = 1;
+            }
+            message qPercentage {
+                int32 value = 1;
+            }
+            uPercentage upercentage = 1;
+            qPercentage qpercentage = 2;
+        }
+
+        message QpList {
+            message pPercentage {
+                int32 value = 1;
+            }
+            message qPercentage {
+                int32 value = 1;
+            }
+            pPercentage ppercentage = 1;
+            qPercentage qpercentage = 2;
+        }
+
+        message Unominal {
+            int32 value = 1;
+        }
+
+        message PowerPriority {
+            message Active {
+                bool value = 1;
+            }
+            message Reactive {
+                bool value = 1;
+            }
+            Active active = 1;
+            Reactive reactive = 2;
+        }
+
+        Mode mode = 1;
+        Cosphi cosphi = 2;
+        repeated CosphiPList cosphiPList = 3;
+        Q q = 4;
+        repeated QuList quList = 5;
+        repeated QpList qpList = 6;
+        Unominal uNominal = 7;
+        PowerPriority powerPriority = 8;
+    }
+
+    message ActivePower {
+        message PowerLimit {
+            int32 value = 1;
+        }
+
+        message CurrentLimit {
+            int32 value = 1;
+        }
+
+        message WakeupGradient {
+            bool enable = 1;
+        }
+
+        message PfList {
+            message Hz {
+                int32 value = 1;
+            }
+            message pPercentage {
+                int32 value = 1;
+            }
+            Hz hz = 1;
+            pPercentage ppercentage = 2;
+        }
+
+        message PvList {
+            message vPercentage {
+                int32 value = 1;
+            }
+            message pPercentage {
+                int32 value = 1;
+            }
+            vPercentage vpercentage = 1;
+            pPercentage ppercentage = 2;
+        }
+
+        message RampRate {
+            int32 value = 1;
+        }
+
+        PowerLimit powerLimit = 1;
+        CurrentLimit currentLimit = 2;
+        WakeupGradient wakeupGradient = 3;
+        int32 gradientTime = 4;
+        repeated PfList pfList = 5;
+        repeated PvList pvList = 6;
+        RampRate rampRate = 8;
+    }
+
+    message WakeupConfig{
+        message MinWakeupFreq {
+            int32 value = 1;
+        }
+
+        message MaxWakeupFreq {
+            int32 value = 1;
+        }
+        
+        message MinWakeupVgrid {
+            int32 value = 1;
+        }
+
+        message MaxWakeupVgrid {
+            int32 value = 1;
+        }
+
+        MinWakeupFreq minWakeupFreq = 1;
+        MaxWakeupFreq maxWakeupFreq = 2;
+        MinWakeupVgrid minWakeupVgrid = 3;
+        MaxWakeupVgrid maxWakeupVgrid = 4;
+    }
+
+    message Advanced {
+        message SetFRT {
+            int32 enable = 1;
+        }
+
+        message FrtKFactor {
+            int32 value = 1;
+        }
+
+        message ZeroLimitControl {
+            int32 enable = 1;
+        }
+
+        SetFRT setFrt = 1;
+        FrtKFactor frtKFactor = 2;
+        ZeroLimitControl zeroLimitControl = 3;
+    }
+
+    GridControl gridControl = 1;
+    EnergyManager energyManager = 2;
+    Rrcr rrcr = 3;
+    ReactivePower reactivePower = 4;
+    ActivePower activePower = 5;
+    WakeupConfig wakeupConfig = 6;
+    Advanced advanced = 7;
+}
