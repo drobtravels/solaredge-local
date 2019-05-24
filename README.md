@@ -36,6 +36,7 @@ client.get_status()  # Provides general energy and other overview information
 client.get_maintenance() # Provides optimizer level information and other details
 client.get_information() # Provides software versions and error log list.
 client.get_power_control() # Provides power control information and other details.
+client.get_communication() # Provides information on communication such as LAN, Wifi and Modbus.
 ```
 
 ### API Endpoints

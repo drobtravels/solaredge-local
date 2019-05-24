@@ -1,0 +1,169 @@
+syntax = "proto3";
+
+message Communication {
+    message ServerChannel {
+        message Lan {
+            bool value = 1;
+        }
+        // Todo add wifi rs & zigbee. Unclear which values.
+        Lan lan = 1;
+    }
+
+    message Lan {
+        message Dhcp {
+            bool value = 1;
+        }
+        message Ip {
+            message IpAddress {
+                string ipAddress = 1;
+            }
+            message Subnetmask {
+                string subnetMask = 1;
+            }
+            message Gateway {
+                string gateway = 1;
+            }
+            message Dns {
+                string dns = 1;
+            }
+            IpAddress ipAddress = 1;
+            Subnetmask subnetMask = 2;
+            Gateway gateway = 3;
+            Dns dns = 4;
+        }
+        message Mac {
+            string mac = 1;
+        }
+        Dhcp dhcp = 1;
+        Ip ip = 2;
+        string mac = 3;
+    }
+
+    message Rs4851 {
+        message Protocol {
+            message SeSlave {
+                bool seslave = 1;
+            }
+            message SeMaster {
+                bool semaster = 2;
+            }
+            message Modbus {
+                bool modbus = 3;
+            }
+            message Sunspec {
+                bool sunspec = 4;
+            }
+            message None {
+                bool none = 5;
+            }
+            SeSlave seSlave = 1;
+            SeMaster seMaster = 2;
+            Modbus modbusMultiDevices = 3;
+            Sunspec sunspec = 4;
+            None none = 5;
+        }
+        message DeviceID {
+            int32 deviceid = 1;
+        }
+        //Todo: add more information about modbus and slaves
+        Protocol protocol = 1;
+        DeviceID deviceId = 7;
+    }
+
+    message Rs4852 {
+        message Protocol {
+            message SeSlave {
+                bool seslave = 1;
+            }
+            message SeMaster {
+                bool semaster = 1;
+            }
+            message Modbus {
+                bool modbus = 1;
+            }
+            message Sunspec {
+                bool sunspec = 1;
+            }
+            message None {
+                bool none = 1;
+            }
+            SeSlave seSlave = 1;
+            SeMaster seMaster = 2;
+            Modbus modbusMultiDevices = 3;
+            Sunspec sunspec = 4;
+            None none = 5;
+        }
+        message DeviceID {
+            int32 deviceId = 1;
+        }
+        //Todo: add more information about modbus and slaves
+        Protocol protocol = 1;
+        DeviceID deviceId = 7;
+    }
+
+    message Zigbee {
+        
+    }
+
+    message Wifi {
+        message Wpsduration {
+            int32 wpsDuration = 1;
+        }
+        message Extantenna {
+            int32 extAntenna = 1;
+        }
+        int32 status = 3;
+        Wpsduration wpsDuration = 4;
+        Extantenna extAntenna = 5;
+        //Todo add chosen network and discordnetworkslist
+    }
+    message Cellular {
+        
+    }
+    message Gpio {
+        message Pri {
+            message Disable {
+                bool disable = 1;
+            }
+            message Rrcr {
+                bool rrcr = 1;
+            }
+            message Acrelay {
+                bool acRelay = 1;
+            }
+            message RrcrAcRelay {
+                bool rrcrAcRelay = 1;
+            }
+            message Drm {
+                bool drm = 1;
+            }
+            Disable disable = 1;
+            Rrcr rrcr = 2;
+            Acrelay acRelay = 3;
+            RrcrAcRelay rrcrAcRelay = 4;
+            Drm drm = 5;
+        }
+        Pri pri = 1;
+    }
+    
+    message ModbusTcpPort {
+        message Enabled {
+            bool enabled = 1;
+        }
+        message Port {
+            int32 port = 1;
+        }
+        Enabled enabled = 1;
+        Port port = 2;
+    }
+
+    ServerChannel serverChannel = 1;
+    Lan lan = 2;
+    Rs4851 rs4851 = 3;
+    Rs4852 rs4852 = 4;
+    Zigbee zigbee = 5;
+    Wifi wifi = 6;
+    Cellular cellular = 7;
+    Gpio gpio = 8;
+    ModbusTcpPort modbusTcpPort = 9;
+}

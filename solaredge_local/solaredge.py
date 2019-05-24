@@ -3,6 +3,7 @@ from .maintenance_pb2 import Maintenance
 from .status_pb2 import Status
 from .information_pb2 import Information
 from .powercontrol_pb2 import PowerControl
+from .communication_pb2 import Communication
 
 class SolarEdge(Consumer):
     @get("/web/v1/status")
@@ -23,4 +24,8 @@ class SolarEdge(Consumer):
 
     @get("/web/v1/power_control")
     def get_power_control(self) -> PowerControl:
+        pass
+
+    @get("/web/v1/communication")
+    def get_power_control(self) -> Communication:
         pass
