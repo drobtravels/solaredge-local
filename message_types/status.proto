@@ -1,128 +1,162 @@
 syntax = "proto3";
 
 message Status {
+    message Site {
+        message InverterStatus {
+            string enabled = 1;
+            string connected = 2;
+        }
 
-  message Site {
-    message InverterStatus {
-      string enabled = 1;
-      string connected = 2;
+        float productionWatt = 1;
+        float sizeLimitWatt = 2;
+        InverterStatus inverterStatus = 3;
+    }
+    
+    message OptimizersStatus {
+        int32 total = 1;
+        int32 online = 2;
     }
 
-    float productionWatt = 1;
-    float sizeLimitWatt = 2;
-    InverterStatus inverterStatus = 3;
-  }
-
-  message OptimizersStatus {
-    int32 total = 1;
-    int32 online = 2;
-  }
-
-  message Inverters {
-    message Unit {
-      string dspSn = 1;
-      float voltage = 2;
-      OptimizersStatus optimizersStatus = 3;
-      Temperature temperature = 4;
-      int32 fan = 5;
-      string errorCode = 6;
-      int32 subSystem = 7;
-      string badPosition = 8;
+    enum ManagerStatus {
+        SHUTTING_DOWN = 0;
+        ERROR = 1;
+        STANDBY = 2;
+        PAIRING = 3;
+        POWER_PRODUCTION = 4;
+        AC_CHARGING = 5;
+        NOT_PAIRED = 6;
+        NIGHT_MODE = 7;
+        GRID_MONITORING = 8;
+        IDLE = 9;
     }
 
-    message Temperature {
-      message Units {
-        bool celsius = 1;
-        bool farenheit = 2;
-      }
+    message Inverters {
+        message Unit {
+            string dspSn = 1;
+            float voltage = 2;
+            OptimizersStatus optimizersStatus = 3;
+            Temperature temperature = 4;
+            int32 fan = 5;
+            string errorCode = 6;
+            int32 subSystem = 7;
+            string badPosition = 8;
+        }
 
-      int32 value = 1;
-      Units units = 2;
+        message Temperature {
+            message Units {
+                bool celsius = 1;
+                bool farenheit = 2;
+            }
+            
+            int32 value = 1;
+            Units units = 2;
+        }
+
+        Unit left = 1;
+        Unit primary = 2;
+        Unit right = 3;
     }
 
-    Unit left = 1;
-    Unit primary = 2;
-    Unit right = 3;
-  }
+    message Communication {
+        message Rs4851 {
+            message Connected {
 
-  message Communication {
+            }
+            message Enabled {
 
-  }
+            }
+            message Protocol {
+                bool seSlave = 1;
+                bool seMaster = 2;
+                bool modbusMultiDevices = 3;
+                bool sunspec = 4;
+                bool none = 5;
+            }
+            Protocol protocol = 3;
+        }
 
-  message EnergyStatistics {
-    float today = 1;
-    float thisMonth = 2;
-    float thisYear = 3;
-    float total = 4;
-  }
+        message Rs4852 {
+            message Connected {
 
-  message Evese {
+            }
+            message Enabled {
 
-  }
+            }
+            message Protocol {
+                bool seSlave = 1;
+                bool seMaster = 2;
+                bool modbusMultiDevices = 3;
+                bool sunspec = 4;
+                bool none = 5;
+            }
+            Protocol protocol = 3;
+        }
+        
+        //Todo: add more information about modbus and slaves
+        Rs4851 rs4851 = 1;
+        Rs4852 rs4852 = 2;
+        int32 lan = 3;
+    }
 
-  message Meter {
-    string connectionType = 1;
-    string status = 3;
-    string id = 4;
-    float currentPower = 5;
-    float totalEnergy = 6;
-    string s0Pulse = 7;
-  }
+    message EnergyStatistics {
+        float today = 1;
+        float thisMonth = 2;
+        float thisYear = 3;
+        float total = 4;
+    }
 
-  message Battery {
+    message Evese {
+        
+    }
+    message Meter {
+        string connectionType = 1;
+        string status = 3;
+        string id = 4;
+        float currentPower = 5;
+        float totalEnergy = 6;
+        string s0Pulse = 7;
+    }
 
-  }
+    message Battery {
+        
+    }
 
-  message Notification {
+    message Notification {
 
-  }
+    }
 
-  message ServerCommunication {
-	message CommunicationStatus {
-		bool physicalConnection = 1;
-		bool IP_Address = 2;
-		bool Gateway_Link = 3;
-		bool Internet_Link = 4;
-		bool Monitoring_Link = 5;
-		bool S_OK = 6;
-	}
-	
-	CommunicationStatus status = 1;
-  }
+    message ServerCommunication {
+        message CommunicationStatus {
+            bool physicalConnection = 1;
+            bool IP_Address = 2;
+            bool Gateway_Link = 3;
+            bool Internet_Link = 4;
+            bool Monitoring_Link = 5;
+            bool S_OK = 6;
+        }
+        CommunicationStatus status = 1;
+    }
 
-  enum ManagerStatus {
-    SHUTTING_DOWN = 0;
-    ERROR = 1;
-    STANDBY = 2;
-    PAIRING = 3;
-    POWER_PRODUCTION = 4;
-    AC_CHARGING = 5;
-    NOT_PAIRED = 6;
-    NIGHT_MODE = 7;
-    GRID_MONITORING = 8;
-    IDLE = 9;
-  }
-
-  string sn = 1;
-  Site site = 2;
-  float powerWatt = 3;
-  float voltage = 4;
-  float frequencyHz = 5;
-  OptimizersStatus optimizersStatus = 6;
-  bool sOk = 7;
-  ManagerStatus status = 8;
-  bool switchStatus = 9;
-  float cosPhi = 10;
-  float powerLimit = 11;
-  int32 country = 12;
-  Inverters inverters = 13;
-  Communication communication = 14;
-  EnergyStatistics energy = 15;
-  int32 portiaErrorCode = 16;
-  int32 portiaSubsystem = 17;
-  Evese evese = 18;
-  repeated Meter metersList = 19;
-  repeated Battery batteriesList = 20;
-  Notification notification = 21;
-  ServerCommunication serverComm = 22;
+    string sn = 1;
+    Site site = 2;
+    float powerWatt = 3;
+    float voltage = 4;
+    float frequencyHz = 5;
+    OptimizersStatus optimizersStatus = 6;
+    bool sOk = 7;
+    ManagerStatus status = 8;
+    bool switchStatus = 9;
+    float cosPhi = 10;
+    float powerLimit = 11;
+    int32 country = 12;
+    Inverters inverters = 13;
+    Communication communication = 14;
+    EnergyStatistics energy = 15;
+    int32 portiaErrorCode = 16;
+    int32 portiaSubsystem = 17;
+    Evese evese = 18;
+    repeated Meter metersList = 19;
+    repeated Battery batteriesList = 20;
+    Notification notification = 21;
+    ServerCommunication serverComm = 22;
 }
