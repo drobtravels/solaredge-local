@@ -40,6 +40,7 @@ message Status {
             string errorCode = 6;
             int32 subSystem = 7;
             string badPosition = 8;
+            Isolation isolation = 9;
         }
 
         message Temperature {
@@ -50,6 +51,14 @@ message Status {
             
             int32 value = 1;
             Units units = 2;
+        }
+
+        message Isolation {
+            message Iso {
+                int32 isolation = 1;
+            }
+            Iso rIso = 2;
+            int32 faultLocation = 3;
         }
 
         Unit left = 1;
@@ -91,11 +100,17 @@ message Status {
             }
             Protocol protocol = 3;
         }
+
+        message Wifi {
+            string ssid = 1;
+            int32 signal = 2;
+        }
         
         //Todo: add more information about modbus and slaves
         Rs4851 rs4851 = 1;
         Rs4852 rs4852 = 2;
         int32 lan = 3;
+        Wifi wifi = 5;
     }
 
     message EnergyStatistics {
