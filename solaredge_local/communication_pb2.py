@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='communication.proto',
   package='',
   syntax='proto3',
-  serialized_pb=_b('\n\x13\x63ommunication.proto\"\xda\x16\n\rCommunication\x12\x33\n\rserverChannel\x18\x01 \x01(\x0b\x32\x1c.Communication.ServerChannel\x12\x1f\n\x03lan\x18\x02 \x01(\x0b\x32\x12.Communication.Lan\x12%\n\x06rs4851\x18\x03 \x01(\x0b\x32\x15.Communication.Rs4851\x12%\n\x06rs4852\x18\x04 \x01(\x0b\x32\x15.Communication.Rs4852\x12%\n\x06zigbee\x18\x05 \x01(\x0b\x32\x15.Communication.Zigbee\x12!\n\x04wifi\x18\x06 \x01(\x0b\x32\x13.Communication.Wifi\x12)\n\x08\x63\x65llular\x18\x07 \x01(\x0b\x32\x17.Communication.Cellular\x12!\n\x04gpio\x18\x08 \x01(\x0b\x32\x13.Communication.Gpio\x12\x33\n\rmodbusTcpPort\x18\t \x01(\x0b\x32\x1c.Communication.ModbusTcpPort\x1aR\n\rServerChannel\x12-\n\x03lan\x18\x01 \x01(\x0b\x32 .Communication.ServerChannel.Lan\x1a\x12\n\x03Lan\x12\x0b\n\x03lan\x18\x01 \x01(\x08\x1a\xc1\x03\n\x03Lan\x12%\n\x04\x64hcp\x18\x01 \x01(\x0b\x32\x17.Communication.Lan.Dhcp\x12!\n\x02ip\x18\x02 \x01(\x0b\x32\x15.Communication.Lan.Ip\x12\x0b\n\x03mac\x18\x03 \x01(\t\x1a\x14\n\x04\x44hcp\x12\x0c\n\x04\x64hcp\x18\x01 \x01(\x08\x1a\xb8\x02\n\x02Ip\x12\x32\n\tipAddress\x18\x01 \x01(\x0b\x32\x1f.Communication.Lan.Ip.IpAddress\x12\x34\n\nsubnetMask\x18\x02 \x01(\x0b\x32 .Communication.Lan.Ip.Subnetmask\x12.\n\x07gateway\x18\x03 \x01(\x0b\x32\x1d.Communication.Lan.Ip.Gateway\x12&\n\x03\x64ns\x18\x04 \x01(\x0b\x32\x19.Communication.Lan.Ip.Dns\x1a\x1e\n\tIpAddress\x12\x11\n\tipAddress\x18\x01 \x01(\t\x1a \n\nSubnetmask\x12\x12\n\nsubnetMask\x18\x01 \x01(\t\x1a\x1a\n\x07Gateway\x12\x0f\n\x07gateway\x18\x01 \x01(\t\x1a\x12\n\x03\x44ns\x12\x0b\n\x03\x64ns\x18\x01 \x01(\t\x1a\x12\n\x03Mac\x12\x0b\n\x03mac\x18\x01 \x01(\t\x1a\xc0\x04\n\x06Rs4851\x12\x30\n\x08protocol\x18\x01 \x01(\x0b\x32\x1e.Communication.Rs4851.Protocol\x12\x30\n\x08\x64\x65viceId\x18\x07 \x01(\x0b\x32\x1e.Communication.Rs4851.DeviceID\x1a\xb3\x03\n\x08Protocol\x12\x37\n\x07seSlave\x18\x01 \x01(\x0b\x32&.Communication.Rs4851.Protocol.SeSlave\x12\x39\n\x08seMaster\x18\x02 \x01(\x0b\x32\'.Communication.Rs4851.Protocol.SeMaster\x12\x41\n\x12modbusMultiDevices\x18\x03 \x01(\x0b\x32%.Communication.Rs4851.Protocol.Modbus\x12\x37\n\x07sunspec\x18\x04 \x01(\x0b\x32&.Communication.Rs4851.Protocol.Sunspec\x12\x31\n\x04none\x18\x05 \x01(\x0b\x32#.Communication.Rs4851.Protocol.None\x1a\x1a\n\x07SeSlave\x12\x0f\n\x07seslave\x18\x01 \x01(\x08\x1a\x1c\n\x08SeMaster\x12\x10\n\x08semaster\x18\x02 \x01(\x08\x1a\x18\n\x06Modbus\x12\x0e\n\x06modbus\x18\x03 \x01(\x08\x1a\x1a\n\x07Sunspec\x12\x0f\n\x07sunspec\x18\x04 \x01(\x08\x1a\x14\n\x04None\x12\x0c\n\x04none\x18\x05 \x01(\x08\x1a\x1c\n\x08\x44\x65viceID\x12\x10\n\x08\x64\x65viceid\x18\x01 \x01(\x05\x1a\xc0\x04\n\x06Rs4852\x12\x30\n\x08protocol\x18\x01 \x01(\x0b\x32\x1e.Communication.Rs4852.Protocol\x12\x30\n\x08\x64\x65viceId\x18\x07 \x01(\x0b\x32\x1e.Communication.Rs4852.DeviceID\x1a\xb3\x03\n\x08Protocol\x12\x37\n\x07seSlave\x18\x01 \x01(\x0b\x32&.Communication.Rs4852.Protocol.SeSlave\x12\x39\n\x08seMaster\x18\x02 \x01(\x0b\x32\'.Communication.Rs4852.Protocol.SeMaster\x12\x41\n\x12modbusMultiDevices\x18\x03 \x01(\x0b\x32%.Communication.Rs4852.Protocol.Modbus\x12\x37\n\x07sunspec\x18\x04 \x01(\x0b\x32&.Communication.Rs4852.Protocol.Sunspec\x12\x31\n\x04none\x18\x05 \x01(\x0b\x32#.Communication.Rs4852.Protocol.None\x1a\x1a\n\x07SeSlave\x12\x0f\n\x07seslave\x18\x01 \x01(\x08\x1a\x1c\n\x08SeMaster\x12\x10\n\x08semaster\x18\x01 \x01(\x08\x1a\x18\n\x06Modbus\x12\x0e\n\x06modbus\x18\x01 \x01(\x08\x1a\x1a\n\x07Sunspec\x12\x0f\n\x07sunspec\x18\x01 \x01(\x08\x1a\x14\n\x04None\x12\x0c\n\x04none\x18\x01 \x01(\x08\x1a\x1c\n\x08\x44\x65viceID\x12\x10\n\x08\x64\x65viceId\x18\x01 \x01(\x05\x1a\x08\n\x06Zigbee\x1a\xc6\x01\n\x04Wifi\x12\x0e\n\x06status\x18\x03 \x01(\x05\x12\x34\n\x0bwpsDuration\x18\x04 \x01(\x0b\x32\x1f.Communication.Wifi.Wpsduration\x12\x32\n\nextAntenna\x18\x05 \x01(\x0b\x32\x1e.Communication.Wifi.Extantenna\x1a\"\n\x0bWpsduration\x12\x13\n\x0bwpsDuration\x18\x01 \x01(\x05\x1a \n\nExtantenna\x12\x12\n\nextAntenna\x18\x01 \x01(\x05\x1a\n\n\x08\x43\x65llular\x1a\xae\x03\n\x04Gpio\x12$\n\x03pri\x18\x01 \x01(\x0b\x32\x17.Communication.Gpio.Pri\x1a\xff\x02\n\x03Pri\x12\x30\n\x07\x64isable\x18\x01 \x01(\x0b\x32\x1f.Communication.Gpio.Pri.Disable\x12*\n\x04rrcr\x18\x02 \x01(\x0b\x32\x1c.Communication.Gpio.Pri.Rrcr\x12\x30\n\x07\x61\x63Relay\x18\x03 \x01(\x0b\x32\x1f.Communication.Gpio.Pri.Acrelay\x12\x38\n\x0brrcrAcRelay\x18\x04 \x01(\x0b\x32#.Communication.Gpio.Pri.RrcrAcRelay\x12(\n\x03\x64rm\x18\x05 \x01(\x0b\x32\x1b.Communication.Gpio.Pri.Drm\x1a\x1a\n\x07\x44isable\x12\x0f\n\x07\x64isable\x18\x01 \x01(\x08\x1a\x14\n\x04Rrcr\x12\x0c\n\x04rrcr\x18\x01 \x01(\x08\x1a\x1a\n\x07\x41\x63relay\x12\x0f\n\x07\x61\x63Relay\x18\x01 \x01(\x08\x1a\"\n\x0bRrcrAcRelay\x12\x13\n\x0brrcrAcRelay\x18\x01 \x01(\x08\x1a\x12\n\x03\x44rm\x12\x0b\n\x03\x64rm\x18\x01 \x01(\x08\x1a\xa9\x01\n\rModbusTcpPort\x12\x35\n\x07\x65nabled\x18\x01 \x01(\x0b\x32$.Communication.ModbusTcpPort.Enabled\x12/\n\x04port\x18\x02 \x01(\x0b\x32!.Communication.ModbusTcpPort.Port\x1a\x1a\n\x07\x45nabled\x12\x0f\n\x07\x65nabled\x18\x01 \x01(\x08\x1a\x14\n\x04Port\x12\x0c\n\x04port\x18\x01 \x01(\x05\x62\x06proto3')
+  serialized_pb=_b('\n\x13\x63ommunication.proto\"\x9a\x16\n\rCommunication\x12\x33\n\rserverChannel\x18\x01 \x01(\x0b\x32\x1c.Communication.ServerChannel\x12\x1f\n\x03lan\x18\x02 \x01(\x0b\x32\x12.Communication.Lan\x12%\n\x06rs4851\x18\x03 \x01(\x0b\x32\x15.Communication.Rs4851\x12%\n\x06rs4852\x18\x04 \x01(\x0b\x32\x15.Communication.Rs4852\x12%\n\x06zigbee\x18\x05 \x01(\x0b\x32\x15.Communication.Zigbee\x12!\n\x04wifi\x18\x06 \x01(\x0b\x32\x13.Communication.Wifi\x12)\n\x08\x63\x65llular\x18\x07 \x01(\x0b\x32\x17.Communication.Cellular\x12!\n\x04gpio\x18\x08 \x01(\x0b\x32\x13.Communication.Gpio\x12\x33\n\rmodbusTcpPort\x18\t \x01(\x0b\x32\x1c.Communication.ModbusTcpPort\x1a\xa0\x01\n\rServerChannel\x12-\n\x03lan\x18\x01 \x01(\x0b\x32 .Communication.ServerChannel.Lan\x12/\n\x04wifi\x18\x03 \x01(\x0b\x32!.Communication.ServerChannel.Wifi\x1a\x16\n\x03Lan\x12\x0f\n\x07\x65nabled\x18\x01 \x01(\x08\x1a\x17\n\x04Wifi\x12\x0f\n\x07\x65nabled\x18\x01 \x01(\x08\x1a\xc4\x03\n\x03Lan\x12%\n\x04\x64hcp\x18\x01 \x01(\x0b\x32\x17.Communication.Lan.Dhcp\x12!\n\x02ip\x18\x02 \x01(\x0b\x32\x15.Communication.Lan.Ip\x12\x0b\n\x03mac\x18\x03 \x01(\t\x1a\x17\n\x04\x44hcp\x12\x0f\n\x07\x65nabled\x18\x01 \x01(\x08\x1a\xb8\x02\n\x02Ip\x12\x32\n\tipAddress\x18\x01 \x01(\x0b\x32\x1f.Communication.Lan.Ip.IpAddress\x12\x34\n\nsubnetMask\x18\x02 \x01(\x0b\x32 .Communication.Lan.Ip.Subnetmask\x12.\n\x07gateway\x18\x03 \x01(\x0b\x32\x1d.Communication.Lan.Ip.Gateway\x12&\n\x03\x64ns\x18\x04 \x01(\x0b\x32\x19.Communication.Lan.Ip.Dns\x1a\x1e\n\tIpAddress\x12\x11\n\tipAddress\x18\x01 \x01(\t\x1a \n\nSubnetmask\x12\x12\n\nsubnetMask\x18\x01 \x01(\t\x1a\x1a\n\x07Gateway\x12\x0f\n\x07gateway\x18\x01 \x01(\t\x1a\x12\n\x03\x44ns\x12\x0b\n\x03\x64ns\x18\x01 \x01(\t\x1a\x12\n\x03Mac\x12\x0b\n\x03mac\x18\x01 \x01(\t\x1a\xf7\x03\n\x06Rs4851\x12\x30\n\x08protocol\x18\x01 \x01(\x0b\x32\x1e.Communication.Rs4851.Protocol\x12\x30\n\x08\x64\x65viceId\x18\x07 \x01(\x0b\x32\x1e.Communication.Rs4851.DeviceID\x1a\xea\x02\n\x08Protocol\x12\x37\n\x07seSlave\x18\x01 \x01(\x0b\x32&.Communication.Rs4851.Protocol.SeSlave\x12\x39\n\x08seMaster\x18\x02 \x01(\x0b\x32\'.Communication.Rs4851.Protocol.SeMaster\x12\x41\n\x12modbusMultiDevices\x18\x03 \x01(\x0b\x32%.Communication.Rs4851.Protocol.Modbus\x12\x37\n\x07sunspec\x18\x04 \x01(\x0b\x32&.Communication.Rs4851.Protocol.Sunspec\x1a\x1a\n\x07SeSlave\x12\x0f\n\x07seslave\x18\x01 \x01(\x08\x1a\x1c\n\x08SeMaster\x12\x10\n\x08semaster\x18\x01 \x01(\x08\x1a\x18\n\x06Modbus\x12\x0e\n\x06modbus\x18\x01 \x01(\x08\x1a\x1a\n\x07Sunspec\x12\x0f\n\x07sunspec\x18\x01 \x01(\x08\x1a\x1c\n\x08\x44\x65viceID\x12\x10\n\x08\x64\x65viceid\x18\x01 \x01(\x05\x1a\xf7\x03\n\x06Rs4852\x12\x30\n\x08protocol\x18\x01 \x01(\x0b\x32\x1e.Communication.Rs4852.Protocol\x12\x30\n\x08\x64\x65viceId\x18\x07 \x01(\x0b\x32\x1e.Communication.Rs4852.DeviceID\x1a\xea\x02\n\x08Protocol\x12\x37\n\x07seSlave\x18\x01 \x01(\x0b\x32&.Communication.Rs4852.Protocol.SeSlave\x12\x39\n\x08seMaster\x18\x02 \x01(\x0b\x32\'.Communication.Rs4852.Protocol.SeMaster\x12\x41\n\x12modbusMultiDevices\x18\x03 \x01(\x0b\x32%.Communication.Rs4852.Protocol.Modbus\x12\x37\n\x07sunspec\x18\x04 \x01(\x0b\x32&.Communication.Rs4852.Protocol.Sunspec\x1a\x1a\n\x07SeSlave\x12\x0f\n\x07seslave\x18\x01 \x01(\x08\x1a\x1c\n\x08SeMaster\x12\x10\n\x08semaster\x18\x01 \x01(\x08\x1a\x18\n\x06Modbus\x12\x0e\n\x06modbus\x18\x01 \x01(\x08\x1a\x1a\n\x07Sunspec\x12\x0f\n\x07sunspec\x18\x01 \x01(\x08\x1a\x1c\n\x08\x44\x65viceID\x12\x10\n\x08\x64\x65viceId\x18\x01 \x01(\x05\x1a\x08\n\x06Zigbee\x1a\xc6\x01\n\x04Wifi\x12\x0e\n\x06status\x18\x03 \x01(\x05\x12\x34\n\x0bwpsDuration\x18\x04 \x01(\x0b\x32\x1f.Communication.Wifi.Wpsduration\x12\x32\n\nextAntenna\x18\x05 \x01(\x0b\x32\x1e.Communication.Wifi.Extantenna\x1a\"\n\x0bWpsduration\x12\x13\n\x0bwpsDuration\x18\x01 \x01(\x05\x1a \n\nExtantenna\x12\x12\n\nextAntenna\x18\x01 \x01(\x05\x1a\n\n\x08\x43\x65llular\x1a\xae\x03\n\x04Gpio\x12$\n\x03pri\x18\x01 \x01(\x0b\x32\x17.Communication.Gpio.Pri\x1a\xff\x02\n\x03Pri\x12\x30\n\x07\x64isable\x18\x01 \x01(\x0b\x32\x1f.Communication.Gpio.Pri.Disable\x12*\n\x04rrcr\x18\x02 \x01(\x0b\x32\x1c.Communication.Gpio.Pri.Rrcr\x12\x30\n\x07\x61\x63Relay\x18\x03 \x01(\x0b\x32\x1f.Communication.Gpio.Pri.Acrelay\x12\x38\n\x0brrcrAcRelay\x18\x04 \x01(\x0b\x32#.Communication.Gpio.Pri.RrcrAcRelay\x12(\n\x03\x64rm\x18\x05 \x01(\x0b\x32\x1b.Communication.Gpio.Pri.Drm\x1a\x1a\n\x07\x44isable\x12\x0f\n\x07\x64isable\x18\x01 \x01(\x08\x1a\x14\n\x04Rrcr\x12\x0c\n\x04rrcr\x18\x01 \x01(\x08\x1a\x1a\n\x07\x41\x63relay\x12\x0f\n\x07\x61\x63Relay\x18\x01 \x01(\x08\x1a\"\n\x0bRrcrAcRelay\x12\x13\n\x0brrcrAcRelay\x18\x01 \x01(\x08\x1a\x12\n\x03\x44rm\x12\x0b\n\x03\x64rm\x18\x01 \x01(\x08\x1a\xa9\x01\n\rModbusTcpPort\x12\x35\n\x07\x65nabled\x18\x01 \x01(\x0b\x32$.Communication.ModbusTcpPort.Enabled\x12/\n\x04port\x18\x02 \x01(\x0b\x32!.Communication.ModbusTcpPort.Port\x1a\x1a\n\x07\x45nabled\x12\x0f\n\x07\x65nabled\x18\x01 \x01(\x08\x1a\x14\n\x04Port\x12\x0c\n\x04port\x18\x01 \x01(\x05\x62\x06proto3')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -34,7 +34,7 @@ _COMMUNICATION_SERVERCHANNEL_LAN = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='lan', full_name='Communication.ServerChannel.Lan.lan', index=0,
+      name='enabled', full_name='Communication.ServerChannel.Lan.enabled', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,38 @@ _COMMUNICATION_SERVERCHANNEL_LAN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=474,
-  serialized_end=492,
+  serialized_start=524,
+  serialized_end=546,
+)
+
+_COMMUNICATION_SERVERCHANNEL_WIFI = _descriptor.Descriptor(
+  name='Wifi',
+  full_name='Communication.ServerChannel.Wifi',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='enabled', full_name='Communication.ServerChannel.Wifi.enabled', index=0,
+      number=1, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=548,
+  serialized_end=571,
 )
 
 _COMMUNICATION_SERVERCHANNEL = _descriptor.Descriptor(
@@ -70,10 +100,17 @@ _COMMUNICATION_SERVERCHANNEL = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='wifi', full_name='Communication.ServerChannel.wifi', index=1,
+      number=3, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
-  nested_types=[_COMMUNICATION_SERVERCHANNEL_LAN, ],
+  nested_types=[_COMMUNICATION_SERVERCHANNEL_LAN, _COMMUNICATION_SERVERCHANNEL_WIFI, ],
   enum_types=[
   ],
   options=None,
@@ -82,8 +119,8 @@ _COMMUNICATION_SERVERCHANNEL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=410,
-  serialized_end=492,
+  serialized_start=411,
+  serialized_end=571,
 )
 
 _COMMUNICATION_LAN_DHCP = _descriptor.Descriptor(
@@ -94,7 +131,7 @@ _COMMUNICATION_LAN_DHCP = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dhcp', full_name='Communication.Lan.Dhcp.dhcp', index=0,
+      name='enabled', full_name='Communication.Lan.Dhcp.enabled', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -112,8 +149,8 @@ _COMMUNICATION_LAN_DHCP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=589,
-  serialized_end=609,
+  serialized_start=668,
+  serialized_end=691,
 )
 
 _COMMUNICATION_LAN_IP_IPADDRESS = _descriptor.Descriptor(
@@ -142,8 +179,8 @@ _COMMUNICATION_LAN_IP_IPADDRESS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=812,
-  serialized_end=842,
+  serialized_start=894,
+  serialized_end=924,
 )
 
 _COMMUNICATION_LAN_IP_SUBNETMASK = _descriptor.Descriptor(
@@ -172,8 +209,8 @@ _COMMUNICATION_LAN_IP_SUBNETMASK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=844,
-  serialized_end=876,
+  serialized_start=926,
+  serialized_end=958,
 )
 
 _COMMUNICATION_LAN_IP_GATEWAY = _descriptor.Descriptor(
@@ -202,8 +239,8 @@ _COMMUNICATION_LAN_IP_GATEWAY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=878,
-  serialized_end=904,
+  serialized_start=960,
+  serialized_end=986,
 )
 
 _COMMUNICATION_LAN_IP_DNS = _descriptor.Descriptor(
@@ -232,8 +269,8 @@ _COMMUNICATION_LAN_IP_DNS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=906,
-  serialized_end=924,
+  serialized_start=988,
+  serialized_end=1006,
 )
 
 _COMMUNICATION_LAN_IP = _descriptor.Descriptor(
@@ -283,8 +320,8 @@ _COMMUNICATION_LAN_IP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=612,
-  serialized_end=924,
+  serialized_start=694,
+  serialized_end=1006,
 )
 
 _COMMUNICATION_LAN_MAC = _descriptor.Descriptor(
@@ -313,8 +350,8 @@ _COMMUNICATION_LAN_MAC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=926,
-  serialized_end=944,
+  serialized_start=1008,
+  serialized_end=1026,
 )
 
 _COMMUNICATION_LAN = _descriptor.Descriptor(
@@ -357,8 +394,8 @@ _COMMUNICATION_LAN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=495,
-  serialized_end=944,
+  serialized_start=574,
+  serialized_end=1026,
 )
 
 _COMMUNICATION_RS4851_PROTOCOL_SESLAVE = _descriptor.Descriptor(
@@ -387,8 +424,8 @@ _COMMUNICATION_RS4851_PROTOCOL_SESLAVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1361,
-  serialized_end=1387,
+  serialized_start=1392,
+  serialized_end=1418,
 )
 
 _COMMUNICATION_RS4851_PROTOCOL_SEMASTER = _descriptor.Descriptor(
@@ -400,7 +437,7 @@ _COMMUNICATION_RS4851_PROTOCOL_SEMASTER = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='semaster', full_name='Communication.Rs4851.Protocol.SeMaster.semaster', index=0,
-      number=2, type=8, cpp_type=7, label=1,
+      number=1, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -417,8 +454,8 @@ _COMMUNICATION_RS4851_PROTOCOL_SEMASTER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1389,
-  serialized_end=1417,
+  serialized_start=1420,
+  serialized_end=1448,
 )
 
 _COMMUNICATION_RS4851_PROTOCOL_MODBUS = _descriptor.Descriptor(
@@ -430,7 +467,7 @@ _COMMUNICATION_RS4851_PROTOCOL_MODBUS = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='modbus', full_name='Communication.Rs4851.Protocol.Modbus.modbus', index=0,
-      number=3, type=8, cpp_type=7, label=1,
+      number=1, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -447,8 +484,8 @@ _COMMUNICATION_RS4851_PROTOCOL_MODBUS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1419,
-  serialized_end=1443,
+  serialized_start=1450,
+  serialized_end=1474,
 )
 
 _COMMUNICATION_RS4851_PROTOCOL_SUNSPEC = _descriptor.Descriptor(
@@ -460,7 +497,7 @@ _COMMUNICATION_RS4851_PROTOCOL_SUNSPEC = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='sunspec', full_name='Communication.Rs4851.Protocol.Sunspec.sunspec', index=0,
-      number=4, type=8, cpp_type=7, label=1,
+      number=1, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -477,38 +514,8 @@ _COMMUNICATION_RS4851_PROTOCOL_SUNSPEC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1445,
-  serialized_end=1471,
-)
-
-_COMMUNICATION_RS4851_PROTOCOL_NONE = _descriptor.Descriptor(
-  name='None',
-  full_name='Communication.Rs4851.Protocol.None',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='none', full_name='Communication.Rs4851.Protocol.None.none', index=0,
-      number=5, type=8, cpp_type=7, label=1,
-      has_default_value=False, default_value=False,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1473,
-  serialized_end=1493,
+  serialized_start=1476,
+  serialized_end=1502,
 )
 
 _COMMUNICATION_RS4851_PROTOCOL = _descriptor.Descriptor(
@@ -546,17 +553,10 @@ _COMMUNICATION_RS4851_PROTOCOL = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
-    _descriptor.FieldDescriptor(
-      name='none', full_name='Communication.Rs4851.Protocol.none', index=4,
-      number=5, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
   ],
   extensions=[
   ],
-  nested_types=[_COMMUNICATION_RS4851_PROTOCOL_SESLAVE, _COMMUNICATION_RS4851_PROTOCOL_SEMASTER, _COMMUNICATION_RS4851_PROTOCOL_MODBUS, _COMMUNICATION_RS4851_PROTOCOL_SUNSPEC, _COMMUNICATION_RS4851_PROTOCOL_NONE, ],
+  nested_types=[_COMMUNICATION_RS4851_PROTOCOL_SESLAVE, _COMMUNICATION_RS4851_PROTOCOL_SEMASTER, _COMMUNICATION_RS4851_PROTOCOL_MODBUS, _COMMUNICATION_RS4851_PROTOCOL_SUNSPEC, ],
   enum_types=[
   ],
   options=None,
@@ -565,8 +565,8 @@ _COMMUNICATION_RS4851_PROTOCOL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1058,
-  serialized_end=1493,
+  serialized_start=1140,
+  serialized_end=1502,
 )
 
 _COMMUNICATION_RS4851_DEVICEID = _descriptor.Descriptor(
@@ -595,8 +595,8 @@ _COMMUNICATION_RS4851_DEVICEID = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1495,
-  serialized_end=1523,
+  serialized_start=1504,
+  serialized_end=1532,
 )
 
 _COMMUNICATION_RS4851 = _descriptor.Descriptor(
@@ -632,8 +632,8 @@ _COMMUNICATION_RS4851 = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=947,
-  serialized_end=1523,
+  serialized_start=1029,
+  serialized_end=1532,
 )
 
 _COMMUNICATION_RS4852_PROTOCOL_SESLAVE = _descriptor.Descriptor(
@@ -662,8 +662,8 @@ _COMMUNICATION_RS4852_PROTOCOL_SESLAVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1361,
-  serialized_end=1387,
+  serialized_start=1392,
+  serialized_end=1418,
 )
 
 _COMMUNICATION_RS4852_PROTOCOL_SEMASTER = _descriptor.Descriptor(
@@ -692,8 +692,8 @@ _COMMUNICATION_RS4852_PROTOCOL_SEMASTER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1968,
-  serialized_end=1996,
+  serialized_start=1420,
+  serialized_end=1448,
 )
 
 _COMMUNICATION_RS4852_PROTOCOL_MODBUS = _descriptor.Descriptor(
@@ -722,8 +722,8 @@ _COMMUNICATION_RS4852_PROTOCOL_MODBUS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1998,
-  serialized_end=2022,
+  serialized_start=1450,
+  serialized_end=1474,
 )
 
 _COMMUNICATION_RS4852_PROTOCOL_SUNSPEC = _descriptor.Descriptor(
@@ -752,38 +752,8 @@ _COMMUNICATION_RS4852_PROTOCOL_SUNSPEC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2024,
-  serialized_end=2050,
-)
-
-_COMMUNICATION_RS4852_PROTOCOL_NONE = _descriptor.Descriptor(
-  name='None',
-  full_name='Communication.Rs4852.Protocol.None',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='none', full_name='Communication.Rs4852.Protocol.None.none', index=0,
-      number=1, type=8, cpp_type=7, label=1,
-      has_default_value=False, default_value=False,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=2052,
-  serialized_end=2072,
+  serialized_start=1476,
+  serialized_end=1502,
 )
 
 _COMMUNICATION_RS4852_PROTOCOL = _descriptor.Descriptor(
@@ -821,17 +791,10 @@ _COMMUNICATION_RS4852_PROTOCOL = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
-    _descriptor.FieldDescriptor(
-      name='none', full_name='Communication.Rs4852.Protocol.none', index=4,
-      number=5, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
   ],
   extensions=[
   ],
-  nested_types=[_COMMUNICATION_RS4852_PROTOCOL_SESLAVE, _COMMUNICATION_RS4852_PROTOCOL_SEMASTER, _COMMUNICATION_RS4852_PROTOCOL_MODBUS, _COMMUNICATION_RS4852_PROTOCOL_SUNSPEC, _COMMUNICATION_RS4852_PROTOCOL_NONE, ],
+  nested_types=[_COMMUNICATION_RS4852_PROTOCOL_SESLAVE, _COMMUNICATION_RS4852_PROTOCOL_SEMASTER, _COMMUNICATION_RS4852_PROTOCOL_MODBUS, _COMMUNICATION_RS4852_PROTOCOL_SUNSPEC, ],
   enum_types=[
   ],
   options=None,
@@ -840,8 +803,8 @@ _COMMUNICATION_RS4852_PROTOCOL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1637,
-  serialized_end=2072,
+  serialized_start=1646,
+  serialized_end=2008,
 )
 
 _COMMUNICATION_RS4852_DEVICEID = _descriptor.Descriptor(
@@ -870,8 +833,8 @@ _COMMUNICATION_RS4852_DEVICEID = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2074,
-  serialized_end=2102,
+  serialized_start=2010,
+  serialized_end=2038,
 )
 
 _COMMUNICATION_RS4852 = _descriptor.Descriptor(
@@ -907,8 +870,8 @@ _COMMUNICATION_RS4852 = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1526,
-  serialized_end=2102,
+  serialized_start=1535,
+  serialized_end=2038,
 )
 
 _COMMUNICATION_ZIGBEE = _descriptor.Descriptor(
@@ -930,8 +893,8 @@ _COMMUNICATION_ZIGBEE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2104,
-  serialized_end=2112,
+  serialized_start=2040,
+  serialized_end=2048,
 )
 
 _COMMUNICATION_WIFI_WPSDURATION = _descriptor.Descriptor(
@@ -960,8 +923,8 @@ _COMMUNICATION_WIFI_WPSDURATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2245,
-  serialized_end=2279,
+  serialized_start=2181,
+  serialized_end=2215,
 )
 
 _COMMUNICATION_WIFI_EXTANTENNA = _descriptor.Descriptor(
@@ -990,8 +953,8 @@ _COMMUNICATION_WIFI_EXTANTENNA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2281,
-  serialized_end=2313,
+  serialized_start=2217,
+  serialized_end=2249,
 )
 
 _COMMUNICATION_WIFI = _descriptor.Descriptor(
@@ -1034,8 +997,8 @@ _COMMUNICATION_WIFI = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2115,
-  serialized_end=2313,
+  serialized_start=2051,
+  serialized_end=2249,
 )
 
 _COMMUNICATION_CELLULAR = _descriptor.Descriptor(
@@ -1057,8 +1020,8 @@ _COMMUNICATION_CELLULAR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2315,
-  serialized_end=2325,
+  serialized_start=2251,
+  serialized_end=2261,
 )
 
 _COMMUNICATION_GPIO_PRI_DISABLE = _descriptor.Descriptor(
@@ -1087,8 +1050,8 @@ _COMMUNICATION_GPIO_PRI_DISABLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2626,
-  serialized_end=2652,
+  serialized_start=2562,
+  serialized_end=2588,
 )
 
 _COMMUNICATION_GPIO_PRI_RRCR = _descriptor.Descriptor(
@@ -1117,8 +1080,8 @@ _COMMUNICATION_GPIO_PRI_RRCR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2654,
-  serialized_end=2674,
+  serialized_start=2590,
+  serialized_end=2610,
 )
 
 _COMMUNICATION_GPIO_PRI_ACRELAY = _descriptor.Descriptor(
@@ -1147,8 +1110,8 @@ _COMMUNICATION_GPIO_PRI_ACRELAY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2676,
-  serialized_end=2702,
+  serialized_start=2612,
+  serialized_end=2638,
 )
 
 _COMMUNICATION_GPIO_PRI_RRCRACRELAY = _descriptor.Descriptor(
@@ -1177,8 +1140,8 @@ _COMMUNICATION_GPIO_PRI_RRCRACRELAY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2704,
-  serialized_end=2738,
+  serialized_start=2640,
+  serialized_end=2674,
 )
 
 _COMMUNICATION_GPIO_PRI_DRM = _descriptor.Descriptor(
@@ -1207,8 +1170,8 @@ _COMMUNICATION_GPIO_PRI_DRM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2740,
-  serialized_end=2758,
+  serialized_start=2676,
+  serialized_end=2694,
 )
 
 _COMMUNICATION_GPIO_PRI = _descriptor.Descriptor(
@@ -1265,8 +1228,8 @@ _COMMUNICATION_GPIO_PRI = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2375,
-  serialized_end=2758,
+  serialized_start=2311,
+  serialized_end=2694,
 )
 
 _COMMUNICATION_GPIO = _descriptor.Descriptor(
@@ -1295,8 +1258,8 @@ _COMMUNICATION_GPIO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2328,
-  serialized_end=2758,
+  serialized_start=2264,
+  serialized_end=2694,
 )
 
 _COMMUNICATION_MODBUSTCPPORT_ENABLED = _descriptor.Descriptor(
@@ -1325,8 +1288,8 @@ _COMMUNICATION_MODBUSTCPPORT_ENABLED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2882,
-  serialized_end=2908,
+  serialized_start=2818,
+  serialized_end=2844,
 )
 
 _COMMUNICATION_MODBUSTCPPORT_PORT = _descriptor.Descriptor(
@@ -1355,8 +1318,8 @@ _COMMUNICATION_MODBUSTCPPORT_PORT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2910,
-  serialized_end=2930,
+  serialized_start=2846,
+  serialized_end=2866,
 )
 
 _COMMUNICATION_MODBUSTCPPORT = _descriptor.Descriptor(
@@ -1392,8 +1355,8 @@ _COMMUNICATION_MODBUSTCPPORT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2761,
-  serialized_end=2930,
+  serialized_start=2697,
+  serialized_end=2866,
 )
 
 _COMMUNICATION = _descriptor.Descriptor(
@@ -1479,11 +1442,13 @@ _COMMUNICATION = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=24,
-  serialized_end=2930,
+  serialized_end=2866,
 )
 
 _COMMUNICATION_SERVERCHANNEL_LAN.containing_type = _COMMUNICATION_SERVERCHANNEL
+_COMMUNICATION_SERVERCHANNEL_WIFI.containing_type = _COMMUNICATION_SERVERCHANNEL
 _COMMUNICATION_SERVERCHANNEL.fields_by_name['lan'].message_type = _COMMUNICATION_SERVERCHANNEL_LAN
+_COMMUNICATION_SERVERCHANNEL.fields_by_name['wifi'].message_type = _COMMUNICATION_SERVERCHANNEL_WIFI
 _COMMUNICATION_SERVERCHANNEL.containing_type = _COMMUNICATION
 _COMMUNICATION_LAN_DHCP.containing_type = _COMMUNICATION_LAN
 _COMMUNICATION_LAN_IP_IPADDRESS.containing_type = _COMMUNICATION_LAN_IP
@@ -1503,12 +1468,10 @@ _COMMUNICATION_RS4851_PROTOCOL_SESLAVE.containing_type = _COMMUNICATION_RS4851_P
 _COMMUNICATION_RS4851_PROTOCOL_SEMASTER.containing_type = _COMMUNICATION_RS4851_PROTOCOL
 _COMMUNICATION_RS4851_PROTOCOL_MODBUS.containing_type = _COMMUNICATION_RS4851_PROTOCOL
 _COMMUNICATION_RS4851_PROTOCOL_SUNSPEC.containing_type = _COMMUNICATION_RS4851_PROTOCOL
-_COMMUNICATION_RS4851_PROTOCOL_NONE.containing_type = _COMMUNICATION_RS4851_PROTOCOL
 _COMMUNICATION_RS4851_PROTOCOL.fields_by_name['seSlave'].message_type = _COMMUNICATION_RS4851_PROTOCOL_SESLAVE
 _COMMUNICATION_RS4851_PROTOCOL.fields_by_name['seMaster'].message_type = _COMMUNICATION_RS4851_PROTOCOL_SEMASTER
 _COMMUNICATION_RS4851_PROTOCOL.fields_by_name['modbusMultiDevices'].message_type = _COMMUNICATION_RS4851_PROTOCOL_MODBUS
 _COMMUNICATION_RS4851_PROTOCOL.fields_by_name['sunspec'].message_type = _COMMUNICATION_RS4851_PROTOCOL_SUNSPEC
-_COMMUNICATION_RS4851_PROTOCOL.fields_by_name['none'].message_type = _COMMUNICATION_RS4851_PROTOCOL_NONE
 _COMMUNICATION_RS4851_PROTOCOL.containing_type = _COMMUNICATION_RS4851
 _COMMUNICATION_RS4851_DEVICEID.containing_type = _COMMUNICATION_RS4851
 _COMMUNICATION_RS4851.fields_by_name['protocol'].message_type = _COMMUNICATION_RS4851_PROTOCOL
@@ -1518,12 +1481,10 @@ _COMMUNICATION_RS4852_PROTOCOL_SESLAVE.containing_type = _COMMUNICATION_RS4852_P
 _COMMUNICATION_RS4852_PROTOCOL_SEMASTER.containing_type = _COMMUNICATION_RS4852_PROTOCOL
 _COMMUNICATION_RS4852_PROTOCOL_MODBUS.containing_type = _COMMUNICATION_RS4852_PROTOCOL
 _COMMUNICATION_RS4852_PROTOCOL_SUNSPEC.containing_type = _COMMUNICATION_RS4852_PROTOCOL
-_COMMUNICATION_RS4852_PROTOCOL_NONE.containing_type = _COMMUNICATION_RS4852_PROTOCOL
 _COMMUNICATION_RS4852_PROTOCOL.fields_by_name['seSlave'].message_type = _COMMUNICATION_RS4852_PROTOCOL_SESLAVE
 _COMMUNICATION_RS4852_PROTOCOL.fields_by_name['seMaster'].message_type = _COMMUNICATION_RS4852_PROTOCOL_SEMASTER
 _COMMUNICATION_RS4852_PROTOCOL.fields_by_name['modbusMultiDevices'].message_type = _COMMUNICATION_RS4852_PROTOCOL_MODBUS
 _COMMUNICATION_RS4852_PROTOCOL.fields_by_name['sunspec'].message_type = _COMMUNICATION_RS4852_PROTOCOL_SUNSPEC
-_COMMUNICATION_RS4852_PROTOCOL.fields_by_name['none'].message_type = _COMMUNICATION_RS4852_PROTOCOL_NONE
 _COMMUNICATION_RS4852_PROTOCOL.containing_type = _COMMUNICATION_RS4852
 _COMMUNICATION_RS4852_DEVICEID.containing_type = _COMMUNICATION_RS4852
 _COMMUNICATION_RS4852.fields_by_name['protocol'].message_type = _COMMUNICATION_RS4852_PROTOCOL
@@ -1573,6 +1534,13 @@ Communication = _reflection.GeneratedProtocolMessageType('Communication', (_mess
       DESCRIPTOR = _COMMUNICATION_SERVERCHANNEL_LAN,
       __module__ = 'communication_pb2'
       # @@protoc_insertion_point(class_scope:Communication.ServerChannel.Lan)
+      ))
+    ,
+
+    Wifi = _reflection.GeneratedProtocolMessageType('Wifi', (_message.Message,), dict(
+      DESCRIPTOR = _COMMUNICATION_SERVERCHANNEL_WIFI,
+      __module__ = 'communication_pb2'
+      # @@protoc_insertion_point(class_scope:Communication.ServerChannel.Wifi)
       ))
     ,
     DESCRIPTOR = _COMMUNICATION_SERVERCHANNEL,
@@ -1668,13 +1636,6 @@ Communication = _reflection.GeneratedProtocolMessageType('Communication', (_mess
         # @@protoc_insertion_point(class_scope:Communication.Rs4851.Protocol.Sunspec)
         ))
       ,
-
-      None = _reflection.GeneratedProtocolMessageType('None', (_message.Message,), dict(
-        DESCRIPTOR = _COMMUNICATION_RS4851_PROTOCOL_NONE,
-        __module__ = 'communication_pb2'
-        # @@protoc_insertion_point(class_scope:Communication.Rs4851.Protocol.None)
-        ))
-      ,
       DESCRIPTOR = _COMMUNICATION_RS4851_PROTOCOL,
       __module__ = 'communication_pb2'
       # @@protoc_insertion_point(class_scope:Communication.Rs4851.Protocol)
@@ -1722,13 +1683,6 @@ Communication = _reflection.GeneratedProtocolMessageType('Communication', (_mess
         DESCRIPTOR = _COMMUNICATION_RS4852_PROTOCOL_SUNSPEC,
         __module__ = 'communication_pb2'
         # @@protoc_insertion_point(class_scope:Communication.Rs4852.Protocol.Sunspec)
-        ))
-      ,
-
-      None = _reflection.GeneratedProtocolMessageType('None', (_message.Message,), dict(
-        DESCRIPTOR = _COMMUNICATION_RS4852_PROTOCOL_NONE,
-        __module__ = 'communication_pb2'
-        # @@protoc_insertion_point(class_scope:Communication.Rs4852.Protocol.None)
         ))
       ,
       DESCRIPTOR = _COMMUNICATION_RS4852_PROTOCOL,
@@ -1860,6 +1814,7 @@ Communication = _reflection.GeneratedProtocolMessageType('Communication', (_mess
 _sym_db.RegisterMessage(Communication)
 _sym_db.RegisterMessage(Communication.ServerChannel)
 _sym_db.RegisterMessage(Communication.ServerChannel.Lan)
+_sym_db.RegisterMessage(Communication.ServerChannel.Wifi)
 _sym_db.RegisterMessage(Communication.Lan)
 _sym_db.RegisterMessage(Communication.Lan.Dhcp)
 _sym_db.RegisterMessage(Communication.Lan.Ip)
@@ -1874,7 +1829,6 @@ _sym_db.RegisterMessage(Communication.Rs4851.Protocol.SeSlave)
 _sym_db.RegisterMessage(Communication.Rs4851.Protocol.SeMaster)
 _sym_db.RegisterMessage(Communication.Rs4851.Protocol.Modbus)
 _sym_db.RegisterMessage(Communication.Rs4851.Protocol.Sunspec)
-_sym_db.RegisterMessage(Communication.Rs4851.Protocol.None)
 _sym_db.RegisterMessage(Communication.Rs4851.DeviceID)
 _sym_db.RegisterMessage(Communication.Rs4852)
 _sym_db.RegisterMessage(Communication.Rs4852.Protocol)
@@ -1882,7 +1836,6 @@ _sym_db.RegisterMessage(Communication.Rs4852.Protocol.SeSlave)
 _sym_db.RegisterMessage(Communication.Rs4852.Protocol.SeMaster)
 _sym_db.RegisterMessage(Communication.Rs4852.Protocol.Modbus)
 _sym_db.RegisterMessage(Communication.Rs4852.Protocol.Sunspec)
-_sym_db.RegisterMessage(Communication.Rs4852.Protocol.None)
 _sym_db.RegisterMessage(Communication.Rs4852.DeviceID)
 _sym_db.RegisterMessage(Communication.Zigbee)
 _sym_db.RegisterMessage(Communication.Wifi)

@@ -3,15 +3,19 @@ syntax = "proto3";
 message Communication {
     message ServerChannel {
         message Lan {
-            bool value = 1;
+            bool enabled = 1;
         }
-        // Todo add wifi rs & zigbee. Unclear which values.
+        message Wifi {
+            bool enabled = 1;
+        }
+        // Todo add rs & zigbee. Unclear which values.
         Lan lan = 1;
+        Wifi wifi = 3;
     }
 
     message Lan {
         message Dhcp {
-            bool value = 1;
+            bool enabled = 1;
         }
         message Ip {
             message IpAddress {
@@ -45,22 +49,18 @@ message Communication {
                 bool seslave = 1;
             }
             message SeMaster {
-                bool semaster = 2;
+                bool semaster = 1;
             }
             message Modbus {
-                bool modbus = 3;
+                bool modbus = 1;
             }
             message Sunspec {
-                bool sunspec = 4;
-            }
-            message None {
-                bool none = 5;
+                bool sunspec = 1;
             }
             SeSlave seSlave = 1;
             SeMaster seMaster = 2;
             Modbus modbusMultiDevices = 3;
             Sunspec sunspec = 4;
-            None none = 5;
         }
         message DeviceID {
             int32 deviceid = 1;
@@ -84,14 +84,10 @@ message Communication {
             message Sunspec {
                 bool sunspec = 1;
             }
-            message None {
-                bool none = 1;
-            }
             SeSlave seSlave = 1;
             SeMaster seMaster = 2;
             Modbus modbusMultiDevices = 3;
             Sunspec sunspec = 4;
-            None none = 5;
         }
         message DeviceID {
             int32 deviceId = 1;
