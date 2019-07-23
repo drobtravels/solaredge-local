@@ -4,10 +4,10 @@ The goal if this respository is to provide information about using the local API
 
 ### Relevant Models
 
-The local API is available on the [SExxxxH-US models with SetApp](https://www.solaredge.com/sites/default/files/se-hd-wave-single-phase-inverter-with-setapp-datasheet-na.pdf) as well as European three phase inverters SEXXK-XXXTXBXX4 models with SetApp like [SE3K-E10K](https://www.solaredge.com/sites/default/files/se-three-phase-inverter-setapp-ds.pdf), [SE12.5K-SE27.6K](https://www.solaredge.com/sites/default/files/se-three-phase-inverter-setapp-datasheet.pdf) and [SE33.3K](https://www.solaredge.com/sites/default/files/se-three-phase-inverter-for-277-480-grid-setapp-datasheet.pdf).
+The local API is available on the [SExxxxH-US models with SetApp](https://www.solaredge.com/sites/default/files/se-hd-wave-single-phase-inverter-with-setapp-datasheet-na.pdf) as well as European three phase inverters SEXXK-XXXTXBXX4 models with SetApp like [SE3K-E10K](https://www.solaredge.com/sites/default/files/se-three-phase-inverter-setapp-ds.pdf), [SE12.5K-SE27.6K](https://www.solaredge.com/sites/default/files/se-three-phase-inverter-setapp-datasheet.pdf) and [SE33.3K](https://www.solaredge.com/sites/default/files/se-three-phase-inverter-for-277-480-grid-setapp-datasheet.pdf). Same goes for Australian inverters [SE2500H->SE10000H](https://www.solaredge.com/sites/default/files/se-single-phase-HD-wave-inverter-setapp-datasheet-aus.pdf). 
 Please check carefully the datasheets if in the section "Additional Features", sub-section "Inverter Commissioning" is present the following line "With the SetApp mobile application using built-in Wi-Fi access point for local connection".
 
-More inforation on SeeApp could be found [here](https://www.solaredge.com/us/products/installer-tools/setapp). These models have no LED screen and are provisioned ONLY via a phone app during commissioning.
+More inforation on SetApp could be found [here](https://www.solaredge.com/us/products/installer-tools/setapp). These models have no LED screen and are provisioned ONLY via a phone app during commissioning.
 Check also the [SetApp FAQ](https://www.solaredge.com/sites/default/files/solaredge-setapp-faqs-eng.pdf) for more info.
 For convenience it is reported here one Q&A:
 
