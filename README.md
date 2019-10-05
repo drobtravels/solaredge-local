@@ -15,7 +15,7 @@ For convenience it is reported here one Q&A:
 >
 > A: Only SolarEdge inverters with a new communication board (no display) can be activated or configured via SetApp.
 
-Reportedly, these new inverters have a CPU number starting with 04.
+These new inverters have a [CPU number](https://www.solaredge.com/setapp-inverters-firmware) starting with 04.
 
 You can check by finding the IP address of your inverter and visiting it in a browser.  If it supports the local API, you'll see the SolarEdge logo and a "Commissioning" menu.
 
@@ -25,7 +25,7 @@ If you do not have the local API available, see [this repository](https://github
 
 For convinience, a python API wrapper, [solaredge_local](https://pypi.org/project/solaredge-local/) is available.  **Only python 3 is supported**
 
-To install: `pip install solaredge-local`
+To install: `pip3 install solaredge-local`
 
 To use:
 
@@ -91,12 +91,12 @@ client.get_power_control() # Provides power control information and other detail
 * Status_ServerCommTest: "web/v1/status/server_comm_test"
 
 The Status endpoint appears to the most useful for realtime production data.
-Optimizer level data is available from the maintenance API endpoint.
+Optimizer level data is available from the Maintenance API endpoint.
 
 
 ## Using the API
 
-All endpoints I have explored so far appear to be a GET, and responses use [Protocol Buffers](https://developers.google.com/protocol-buffers/).  There is no authentication
+All endpoints I have explored so far appear to be a GET, and responses use [Protocol Buffers](https://developers.google.com/protocol-buffers/).  There is no authentication.
 
 ### View Raw Response
 
