@@ -1,11 +1,18 @@
 # SolarEdge Local
 
+**Warning**
+
+Recent firmware versions disable local access.  Some units may continue to work, but many users are reporting it is no longer available.  See [this issue](https://github.com/jbuehl/solaredge/issues/124) and [this issue](https://github.com/drobtravels/solaredge-local/issues/24) for additional details.  Please check if you can access your inverter via a web browser before attempting to use this library.
+
+
 The goal if this respository is to provide information about using the local API available on some solar edge inverters.  This is a WIP based on my observations and may contain inaccuracies.  Pull Requests or Issues are encouraged to correct any mistakes or add additonal informatoin.
 
 ### Relevant Models
 
-The local API is available on the [SExxxxH-US models with SetApp](https://www.solaredge.com/sites/default/files/se-hd-wave-single-phase-inverter-with-setapp-datasheet-na.pdf) as well as European three phase inverters SEXXK-XXXTXBXX4 models with SetApp like [SE3K-E10K](https://www.solaredge.com/sites/default/files/se-three-phase-inverter-setapp-ds.pdf), [SE12.5K-SE27.6K](https://www.solaredge.com/sites/default/files/se-three-phase-inverter-setapp-datasheet.pdf) and [SE33.3K](https://www.solaredge.com/sites/default/files/se-three-phase-inverter-for-277-480-grid-setapp-datasheet.pdf). Same goes for Australian inverters [SE2500H->SE10000H](https://www.solaredge.com/sites/default/files/se-single-phase-HD-wave-inverter-setapp-datasheet-aus.pdf). 
-Please check carefully the datasheets if in the section "Additional Features", sub-section "Inverter Commissioning" is present the following line "With the SetApp mobile application using built-in Wi-Fi access point for local connection".
+The fastest way to check your inverter will support this library and to enter the IP address of your inverter in the browser and see if the administration page is displayed.
+
+The local API is available for specific firmware versions running on [SExxxxH-US models with SetApp](https://www.solaredge.com/sites/default/files/se-hd-wave-single-phase-inverter-with-setapp-datasheet-na.pdf) as well as European three phase inverters SEXXK-XXXTXBXX4 models with SetApp like [SE3K-E10K](https://www.solaredge.com/sites/default/files/se-three-phase-inverter-setapp-ds.pdf), [SE12.5K-SE27.6K](https://www.solaredge.com/sites/default/files/se-three-phase-inverter-setapp-datasheet.pdf) and [SE33.3K](https://www.solaredge.com/sites/default/files/se-three-phase-inverter-for-277-480-grid-setapp-datasheet.pdf). Same goes for Australian inverters [SE2500H->SE10000H](https://www.solaredge.com/sites/default/files/se-single-phase-HD-wave-inverter-setapp-datasheet-aus.pdf). 
+Please check carefully the datasheets if in the section "Additional Features", sub-section "Inverter Commissioning" is present the following line "With the SetApp mobile application using built-in Wi-Fi access point for local connection".  You should 
 
 More inforation on SetApp could be found [here](https://www.solaredge.com/us/products/installer-tools/setapp). These models have no LED screen and are provisioned ONLY via a phone app during commissioning.
 Check also the [SetApp FAQ](https://www.solaredge.com/sites/default/files/solaredge-setapp-faqs-eng.pdf) for more info.
