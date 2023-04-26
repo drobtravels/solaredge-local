@@ -22,7 +22,7 @@ long_description = read('README.md')
 
 setup(
     name='solaredge_local',
-    version="0.2.1",
+    version="0.2.2",
     url='https://github.com/drobtravels/solaredge-local',
     license='MIT License',
     author='David Roberts',
@@ -35,8 +35,8 @@ setup(
     platforms='any',
     python_requires='>=3.0',
     install_requires=[
-        'uplink',
-        'uplink-protobuf'
+        'uplink>=0.9.7',
+        'uplink-protobuf>=0.1.0'
     ],
     classifiers = [
         'Programming Language :: Python :: 3',
