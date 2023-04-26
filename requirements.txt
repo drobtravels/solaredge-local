@@ -16,8 +16,8 @@ requests==2.21.0
 six==1.16.0
 typed-ast==1.5.4
 typing-extensions==3.7.2
-uplink==0.9.7
-uplink-protobuf==0.1.0
+uplink>=0.9.7
+uplink-protobuf>=0.1.0
 uritemplate==3.0.0
 urllib3==1.24.2
 wrapt==1.11.1
