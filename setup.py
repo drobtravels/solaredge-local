@@ -1,11 +1,7 @@
 from __future__ import print_function
-from setuptools import setup, find_packages
+from setuptools import setup
 import io
-import codecs
 import os
-import sys
-
-import solaredge_local
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -22,7 +18,7 @@ long_description = read('README.md')
 
 setup(
     name='solaredge_local',
-    version="0.2.2",
+    version="0.2.3",
     url='https://github.com/drobtravels/solaredge-local',
     license='MIT License',
     author='David Roberts',
